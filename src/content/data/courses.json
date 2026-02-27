@@ -1,204 +1,167 @@
 {
   "courses": [
     {
-      "id": "quran-memorization",
-      "title": "Quran Memorization (Hifz)",
-      "description": "A structured program for memorizing the entire Quran with proper Tajweed rules. Individual attention and regular assessments ensure steady progress.",
-      "category": "quran",
+      "id": "tajweed-deeniyat",
+      "title": "Tajweed & Deeniyat (2-Year)",
+      "description": "A foundational two-year program that builds fluent Quran recitation, essential Islamic knowledge, and daily worship practice for children and new learners.",
+      "category": "tajweed",
       "level": "beginner",
-      "duration": "3-5 Years",
-      "schedule": "Flexible (Daily sessions available)",
-      "instructor": "Sheikh Ahmad Hassan",
-      "maxStudents": 15,
+      "duration": "2 Years",
+      "schedule": "Weekdays: 4:30 PM - 7:00 PM",
+      "instructor": "Ustadh Abdul Hameed",
+      "maxStudents": 25,
       "features": [
-        "One-on-one mentoring",
-        "Daily revision schedule",
-        "Tajweed correction",
-        "Monthly progress reports",
-        "Ijazah certification upon completion"
+        "Small-group recitation circles",
+        "Daily revision plans for parents",
+        "Practical worship workshops",
+        "Quarterly progress reviews"
       ],
       "curriculum": [
-        "Foundation in Tajweed rules",
-        "Memorization techniques",
-        "Revision methodology",
-        "Application of Tajweed",
-        "Complete Quran memorization"
+        "Noorani Qaida mastery",
+        "Makharij & Sifaat of letters",
+        "Core Tajweed rules (Ikhfa, Idgham, Qalqalah)",
+        "Surah memorization (Juz Amma)",
+        "Fiqh of Taharah and Salah",
+        "Essential duas and adhkar",
+        "Islamic manners and etiquette"
+      ],
+      "rules": [
+        "Minimum 85% attendance each term",
+        "Daily home revision log signed by guardians",
+        "Monthly oral assessment is mandatory",
+        "Respectful dress code and punctuality",
+        "Parents attend quarterly progress meetings"
       ]
     },
     {
-      "id": "arabic-intensive",
-      "title": "Intensive Arabic Language",
-      "description": "Master classical and modern standard Arabic to understand the Quran and Islamic texts in their original language.",
-      "category": "arabic",
-      "level": "beginner",
-      "duration": "12 Months",
-      "schedule": "Monday-Thursday, 6:00 PM - 8:00 PM",
-      "instructor": "Dr. Fatima Al-Rashid",
+      "id": "quran-memorization",
+      "title": "Quran Memorization (3-Year)",
+      "description": "An intensive Hifz track focused on memorizing the entire Quran with strong tajweed, revision cycles, and personal mentorship.",
+      "category": "hifz",
+      "level": "intermediate",
+      "duration": "3 Years",
+      "schedule": "Weekdays: 6:00 AM - 8:30 AM or 5:00 PM - 7:30 PM",
+      "instructor": "Sheikh Muhammad Arshad",
+      "maxStudents": 18,
+      "features": [
+        "Daily sabaq, sabqi, and manzil routines",
+        "Weekly tasmi assessments",
+        "Tajweed refinement and voice training",
+        "Ijazah preparation for qualifying students"
+      ],
+      "curriculum": [
+        "Revision of Juz Amma and Tabarak",
+        "Hifz targets for each quarter",
+        "Advanced Tajweed application",
+        "Weekly revision circles",
+        "Monthly comprehensive tasmi",
+        "Final Quran revision and consolidation"
+      ],
+      "rules": [
+        "Daily attendance is compulsory for Hifz success",
+        "Students must submit daily sabaq and sabqi",
+        "Parent/guardian receives weekly progress updates",
+        "Maintaining tajweed accuracy is required",
+        "Completion includes full Quran revision"
+      ]
+    },
+    {
+      "id": "ibadur-rahman",
+      "title": "Ibadur Rahman (2-Year)",
+      "description": "A two-year boys' scholarship track focused on Arabic, Quran translation, and Islamic leadership skills for young learners.",
+      "category": "ibadur-rahman",
+      "level": "intermediate",
+      "duration": "2 Years",
+      "schedule": "Weekdays: 7:30 AM - 10:30 AM",
+      "instructor": "Maulana Saifullah Nadwi",
       "maxStudents": 20,
       "features": [
-        "Native Arabic speakers as instructors",
-        "Conversation practice",
-        "Grammar mastery",
-        "Quranic vocabulary focus",
-        "Cultural immersion activities"
+        "Arabic language foundations",
+        "Weekly khutbah practice",
+        "Community service projects",
+        "Mentorship for teen leadership"
       ],
       "curriculum": [
-        "Arabic alphabet and pronunciation",
-        "Basic grammar (Nahw)",
-        "Morphology (Sarf)",
-        "Reading comprehension",
-        "Conversational Arabic"
+        "Arabic grammar (Nahw) and morphology (Sarf)",
+        "Quran translation essentials",
+        "Seerah and Islamic history",
+        "Fiqh of worship and ethics",
+        "Hadith selections and memorization",
+        "Public speaking and dawah skills"
+      ],
+      "rules": [
+        "Participation in weekly khidmah is required",
+        "Notebook and homework checks every fortnight",
+        "Termly oral and written examinations",
+        "Punctual attendance and adab expected",
+        "Parents attend biannual student reviews"
       ]
     },
     {
-      "id": "fiqh-essentials",
-      "title": "Fiqh Essentials (Islamic Jurisprudence)",
-      "description": "Comprehensive study of Islamic jurisprudence covering worship, transactions, family law, and daily life matters according to the Hanafi and Shafi'i schools.",
-      "category": "fiqh",
-      "level": "intermediate",
-      "duration": "18 Months",
-      "schedule": "Saturdays, 10:00 AM - 2:00 PM",
-      "instructor": "Sheikh Muhammad Al-Faruqi",
-      "maxStudents": 25,
-      "features": [
-        "Comparative fiqh studies",
-        "Contemporary issue discussions",
-        "Case study analysis",
-        "Practical application workshops"
-      ],
-      "curriculum": [
-        "Purification and Prayer",
-        "Zakat and Charity",
-        "Fasting and Ramadan",
-        "Hajj and Umrah",
-        "Family Law",
-        "Business Transactions"
-      ]
-    },
-    {
-      "id": "aqeedah-fundamentals",
-      "title": "Aqeedah Fundamentals",
-      "description": "Study the core beliefs of Islam based on the Quran and Sunnah according to the understanding of the righteous predecessors.",
-      "category": "aqeedah",
+      "id": "momina-program",
+      "title": "Momina Program (2-Year)",
+      "description": "A holistic two-year program for women covering Quran recitation, essential fiqh, family life, and spiritual development.",
+      "category": "momina",
       "level": "beginner",
-      "duration": "6 Months",
-      "schedule": "Tuesdays & Thursdays, 7:00 PM - 8:30 PM",
-      "instructor": "Dr. Yusuf Ibrahim",
-      "maxStudents": 30,
+      "duration": "2 Years",
+      "schedule": "Weekdays: 10:00 AM - 1:00 PM",
+      "instructor": "Ustadha Maryam Siddiq",
+      "maxStudents": 22,
       "features": [
-        "Systematic theology study",
-        "Comparative religions overview",
-        "Modern challenges addressed",
-        "Interactive Q&A sessions"
+        "Female scholars and mentors",
+        "Family-centered applied learning",
+        "Tazkiyah and character development",
+        "Supportive sisterhood circles"
       ],
       "curriculum": [
-        "Oneness of Allah (Tawhid)",
-        "Belief in Angels",
-        "Divine Books",
-        "Prophets and Messengers",
-        "Day of Judgment",
-        "Divine Decree"
+        "Quran recitation with Tajweed",
+        "Fiqh of purity, prayer, and fasting",
+        "Seerah of the Prophet and Mothers of the Believers",
+        "Islamic etiquette and family rights",
+        "Arabic for understanding duas",
+        "Hadith on daily life and worship",
+        "Spiritual development and reflection"
+      ],
+      "rules": [
+        "Minimum 80% attendance per semester",
+        "Weekly revision assignments",
+        "Group projects on family life themes",
+        "Semester assessments and oral exams",
+        "Classroom etiquette and modest dress upheld"
       ]
     },
     {
-      "id": "hadith-studies",
-      "title": "Hadith Studies & Sciences",
-      "description": "Explore the science of Hadith, including authentication methods, major collections, and the role of Hadith in Islamic legislation.",
-      "category": "hadith",
+      "id": "bachelor-alimiyat",
+      "title": "Bachelor of Alimiyat (5-Year)",
+      "description": "A comprehensive five-year scholarship program in classical Islamic sciences, designed to train future scholars and teachers.",
+      "category": "alimiyat",
       "level": "advanced",
-      "duration": "24 Months",
-      "schedule": "Mondays & Wednesdays, 7:00 PM - 9:00 PM",
-      "instructor": "Sheikh Abdullah bin Omar",
+      "duration": "5 Years",
+      "schedule": "Weekdays: 8:00 AM - 1:30 PM",
+      "instructor": "Mufti Ibrahim Qasmi",
       "maxStudents": 15,
       "features": [
-        "Study of major Hadith collections",
-        "Terminology mastery",
-        "Chain of narration analysis",
-        "Comparative Hadith studies"
+        "Classical Dars-e-Nizami texts",
+        "Tafsir and Hadith specialization",
+        "Research methodology and writing",
+        "Teaching practicum and mentorship"
       ],
       "curriculum": [
-        "Introduction to Hadith Sciences",
-        "Authentication methodology",
-        "Study of Sahih al-Bukhari",
-        "Study of Sahih Muslim",
-        "Riyad as-Salihin",
-        "40 Hadith of Nawawi"
-      ]
-    },
-    {
-      "id": "seerah-life",
-      "title": "Seerah: Life of the Prophet",
-      "description": "Journey through the blessed life of Prophet Muhammad (peace be upon him) and derive lessons for modern life.",
-      "category": "seerah",
-      "level": "beginner",
-      "duration": "8 Months",
-      "schedule": "Sundays, 10:00 AM - 12:00 PM",
-      "instructor": "Dr. Aisha Rahman",
-      "maxStudents": 40,
-      "features": [
-        "Interactive storytelling format",
-        "Character analysis",
-        "Practical life applications",
-        "Multimedia presentations"
+        "Arabic rhetoric, Sarf, and Nahw",
+        "Tafsir of selected Surahs",
+        "Hadith studies (Mishkat and selected Kutub)",
+        "Fiqh (Hidayah and contemporary issues)",
+        "Usul al-Fiqh and Qawa'id",
+        "Aqeedah, Kalam, and comparative theology",
+        "Seerah, Islamic history, and leadership",
+        "Research methods and Khutbah training"
       ],
-      "curriculum": [
-        "Pre-Islamic Arabia context",
-        "Birth and early life",
-        "Prophethood in Makkah",
-        "Migration to Madinah",
-        "Battles and treaties",
-        "Conquest of Makkah",
-        "Final days and legacy"
-      ]
-    },
-    {
-      "id": "tajweed-mastery",
-      "title": "Tajweed Mastery",
-      "description": "Perfect your Quran recitation with detailed study of Tajweed rules and their practical application.",
-      "category": "tajweed",
-      "level": "intermediate",
-      "duration": "12 Months",
-      "schedule": "Tuesdays & Fridays, 6:30 PM - 8:00 PM",
-      "instructor": "Qari Khalid Mahmoud",
-      "maxStudents": 12,
-      "features": [
-        "Voice training exercises",
-        "Individual recitation feedback",
-        "Ijazah track available",
-        "Recording and analysis sessions"
-      ],
-      "curriculum": [
-        "Makharij (Articulation points)",
-        "Sifaat (Characteristics of letters)",
-        "Rules of Noon Saakin",
-        "Rules of Meem Saakin",
-        "Rules of Madd",
-        "Stopping and starting rules"
-      ]
-    },
-    {
-      "id": "islamic-history",
-      "title": "Islamic History & Civilization",
-      "description": "Explore the rich history of the Islamic civilization, from the early caliphates to the golden age and beyond.",
-      "category": "islamic-history",
-      "level": "intermediate",
-      "duration": "10 Months",
-      "schedule": "Saturdays, 2:00 PM - 4:00 PM",
-      "instructor": "Dr. Hassan Ali",
-      "maxStudents": 25,
-      "features": [
-        "Primary source materials",
-        "Artifact and document analysis",
-        "Guest lectures by historians",
-        "Field trips to historical sites"
-      ],
-      "curriculum": [
-        "Rightly Guided Caliphs",
-        "Umayyad Dynasty",
-        "Abbasid Golden Age",
-        "Islamic Spain (Al-Andalus)",
-        "Ottoman Empire",
-        "Modern Islamic world"
+      "rules": [
+        "Minimum 90% attendance required",
+        "Daily mutala'ah and written assignments",
+        "Annual comprehensive examinations",
+        "Participation in teaching practicum",
+        "Adherence to institute code of conduct"
       ]
     }
   ]

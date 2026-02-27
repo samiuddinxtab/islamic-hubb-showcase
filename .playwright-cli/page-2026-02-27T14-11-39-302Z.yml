@@ -1,0 +1,595 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e4]:
+      - link "H Islamic Hubb Institute" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: H
+        - generic [ref=e7]:
+          - text: Islamic Hubb
+          - generic [ref=e8]: Institute
+      - generic [ref=e9]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /about
+          - text: About
+          - img [ref=e14]
+        - link "Long-term Courses" [ref=e17] [cursor=pointer]:
+          - /url: /courses
+          - text: Long-term Courses
+          - img [ref=e18]
+        - link "Short-term Courses" [ref=e21] [cursor=pointer]:
+          - /url: /programs
+          - text: Short-term Courses
+          - img [ref=e22]
+        - link "Events" [ref=e25] [cursor=pointer]:
+          - /url: /events
+        - link "Contact" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e28]:
+        - link "Contact" [ref=e29] [cursor=pointer]:
+          - /url: /contact
+        - link "Enroll Now" [ref=e30] [cursor=pointer]:
+          - /url: /courses
+  - main [ref=e32]:
+    - generic [ref=e33]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]: ISLAMIC HUBB • Nurturing Quranic Hearts
+          - heading "ISLAMIC HUBB Quranic Education Hub" [level=1] [ref=e44]:
+            - text: ISLAMIC HUBB
+            - generic [ref=e45]: Quranic Education Hub
+          - paragraph [ref=e46]: Islamic Hubb is a dedicated center for Quranic learning and Islamic sciences, offering structured long-term and short-term programs for children, youth, and adults. Our classes blend traditional scholarship with caring mentorship so every student grows in knowledge, adab, and service.
+          - generic [ref=e47]:
+            - link "Explore Courses" [ref=e48] [cursor=pointer]:
+              - /url: /courses
+              - text: Explore Courses
+              - img [ref=e49]
+            - link "Learn More" [ref=e51] [cursor=pointer]:
+              - /url: /about
+          - generic [ref=e52]:
+            - generic [ref=e53]:
+              - generic [ref=e54]: 1,200+
+              - generic [ref=e55]: Students Nurtured
+            - generic [ref=e56]:
+              - generic [ref=e57]: 30+
+              - generic [ref=e58]: Qualified Scholars
+            - generic [ref=e59]:
+              - generic [ref=e60]: "5"
+              - generic [ref=e61]: Long-term Courses
+            - generic [ref=e62]:
+              - generic [ref=e63]: "3"
+              - generic [ref=e64]: Short-term Tracks
+        - generic [ref=e66]:
+          - generic [ref=e69]:
+            - img [ref=e70]
+            - text: Quranic Studies
+          - generic [ref=e73]:
+            - img [ref=e75]
+            - generic [ref=e77]:
+              - generic [ref=e78]: Quran Hifz
+              - generic [ref=e79]: 100+ Huffaz
+          - generic [ref=e81]:
+            - img [ref=e83]
+            - generic [ref=e85]:
+              - generic [ref=e86]: Arabic
+              - generic [ref=e87]: 50+ Teachers
+          - generic [ref=e94]: +5k Students
+      - img [ref=e96]
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e101]: Why Choose Us
+        - heading "Building Knowledge, Transforming Lives" [level=2] [ref=e102]
+        - paragraph [ref=e103]: We provide a comprehensive learning environment that nurtures spiritual growth and intellectual development through authentic Islamic education.
+      - generic [ref=e104]:
+        - generic [ref=e106]:
+          - img [ref=e108]
+          - heading "Structured Quranic Curriculum" [level=3] [ref=e110]
+          - paragraph [ref=e111]: Step-by-step syllabi with memorization targets, tajweed practice, and Islamic foundations.
+        - generic [ref=e114]:
+          - img [ref=e116]
+          - heading "Dedicated Mentorship" [level=3] [ref=e118]
+          - paragraph [ref=e119]: Small class sizes and weekly feedback to keep every learner on track.
+        - generic [ref=e122]:
+          - img [ref=e124]
+          - heading "Community-Centered" [level=3] [ref=e126]
+          - paragraph [ref=e127]: Programs designed to strengthen families, youth leadership, and community service.
+        - generic [ref=e130]:
+          - img [ref=e132]
+          - heading "Recognized Certifications" [level=3] [ref=e134]
+          - paragraph [ref=e135]: Completion certificates and ijazah pathways for committed students.
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - generic [ref=e140]: Short-term Courses
+        - heading "Focused Learning for Busy Schedules" [level=2] [ref=e141]
+        - paragraph [ref=e142]: Our short-term courses help families, adults, and aspiring teachers build skills quickly with practical, Quran-centered instruction.
+      - generic [ref=e143]:
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - generic [ref=e148]: 10 Months
+            - generic [ref=e149]: 6 hours per week
+          - heading "Pre Alimiyat" [level=3] [ref=e150]
+          - paragraph [ref=e151]: Preparation Track for Advanced Studies
+          - paragraph [ref=e152]: A bridge program for students who want to enter the Alimiyat course, focusing on Arabic foundations, Quran recitation, and study skills.
+          - generic [ref=e154]:
+            - heading "Key Courses:" [level=4] [ref=e155]
+            - list [ref=e156]:
+              - listitem [ref=e157]:
+                - img [ref=e158]
+                - text: Arabic Reading & Writing
+              - listitem [ref=e160]:
+                - img [ref=e161]
+                - text: Tajweed Refresher
+              - listitem [ref=e163]:
+                - img [ref=e164]
+                - text: Introductory Fiqh
+          - link "Learn More" [ref=e166] [cursor=pointer]:
+            - /url: /programs/pre-alimiyat
+            - text: Learn More
+            - img [ref=e167]
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - generic [ref=e173]: 6 Months
+            - generic [ref=e174]: 4 hours per week
+          - heading "Tasheeh & Teaching" [level=3] [ref=e175]
+          - paragraph [ref=e176]: Correct Recitation and Teaching Skills
+          - paragraph [ref=e177]: A focused short-term course to correct Quran recitation and train aspiring teachers with proper methodology and lesson planning.
+          - generic [ref=e179]:
+            - heading "Key Courses:" [level=4] [ref=e180]
+            - list [ref=e181]:
+              - listitem [ref=e182]:
+                - img [ref=e183]
+                - text: Tajweed Correction Sessions
+              - listitem [ref=e185]:
+                - img [ref=e186]
+                - text: Makharij & Sifaat Clinic
+              - listitem [ref=e188]:
+                - img [ref=e189]
+                - text: Teaching Methodology
+          - link "Learn More" [ref=e191] [cursor=pointer]:
+            - /url: /programs/tasheeh-teaching
+            - text: Learn More
+            - img [ref=e192]
+        - generic [ref=e196]:
+          - generic [ref=e197]:
+            - generic [ref=e198]: 6 Months
+            - generic [ref=e199]: 3 hours per week
+          - heading "Asasi Deeniyat" [level=3] [ref=e200]
+          - paragraph [ref=e201]: Essential Islamic Foundations
+          - paragraph [ref=e202]: An accessible course for families and working adults covering essential beliefs, worship, and daily Islamic etiquette.
+          - generic [ref=e204]:
+            - heading "Key Courses:" [level=4] [ref=e205]
+            - list [ref=e206]:
+              - listitem [ref=e207]:
+                - img [ref=e208]
+                - text: Pillars of Islam
+              - listitem [ref=e210]:
+                - img [ref=e211]
+                - text: Daily Duas & Adhkar
+              - listitem [ref=e213]:
+                - img [ref=e214]
+                - text: Fiqh of Prayer and Fasting
+          - link "Learn More" [ref=e216] [cursor=pointer]:
+            - /url: /programs/asasi-deeniyat
+            - text: Learn More
+            - img [ref=e217]
+      - link "View Short-term Courses" [ref=e220] [cursor=pointer]:
+        - /url: /programs
+        - text: View Short-term Courses
+        - img [ref=e221]
+    - generic [ref=e224]:
+      - generic [ref=e225]:
+        - generic [ref=e226]: Long-term Courses
+        - heading "Deep, Structured Islamic Education" [level=2] [ref=e227]
+        - paragraph [ref=e228]: Our flagship programs guide students through Quran memorization, Islamic sciences, and character development with caring mentorship.
+      - generic [ref=e229]:
+        - article [ref=e231]:
+          - generic [ref=e232]:
+            - img [ref=e236]
+            - generic [ref=e239]: Tajweed & Deeniyat
+            - generic [ref=e241]: Beginner
+          - generic [ref=e242]:
+            - heading "Tajweed & Deeniyat (2-Year)" [level=3] [ref=e243]
+            - paragraph [ref=e244]: A foundational two-year program that builds fluent Quran recitation, essential Islamic knowledge, and daily worship practice for children and new learners.
+            - generic [ref=e245]:
+              - generic [ref=e246]:
+                - img [ref=e247]
+                - text: 2 Years
+              - generic [ref=e249]:
+                - img [ref=e250]
+                - text: 25 students
+            - generic [ref=e252]:
+              - generic [ref=e253]: UA
+              - generic [ref=e254]:
+                - paragraph [ref=e255]: Ustadh Abdul Hameed
+                - paragraph [ref=e256]: Instructor
+          - link "View Course Details" [ref=e258] [cursor=pointer]:
+            - /url: /courses/tajweed-deeniyat
+        - article [ref=e260]:
+          - generic [ref=e261]:
+            - img [ref=e265]
+            - generic [ref=e268]: Quran Memorization
+            - generic [ref=e270]: Intermediate
+          - generic [ref=e271]:
+            - heading "Quran Memorization (3-Year)" [level=3] [ref=e272]
+            - paragraph [ref=e273]: An intensive Hifz track focused on memorizing the entire Quran with strong tajweed, revision cycles, and personal mentorship.
+            - generic [ref=e274]:
+              - generic [ref=e275]:
+                - img [ref=e276]
+                - text: 3 Years
+              - generic [ref=e278]:
+                - img [ref=e279]
+                - text: 18 students
+            - generic [ref=e281]:
+              - generic [ref=e282]: SM
+              - generic [ref=e283]:
+                - paragraph [ref=e284]: Sheikh Muhammad Arshad
+                - paragraph [ref=e285]: Instructor
+          - link "View Course Details" [ref=e287] [cursor=pointer]:
+            - /url: /courses/quran-memorization
+        - article [ref=e289]:
+          - generic [ref=e290]:
+            - img [ref=e294]
+            - generic [ref=e297]: Ibadur Rahman
+            - generic [ref=e299]: Intermediate
+          - generic [ref=e300]:
+            - heading "Ibadur Rahman (2-Year)" [level=3] [ref=e301]
+            - paragraph [ref=e302]: A two-year boys' scholarship track focused on Arabic, Quran translation, and Islamic leadership skills for young learners.
+            - generic [ref=e303]:
+              - generic [ref=e304]:
+                - img [ref=e305]
+                - text: 2 Years
+              - generic [ref=e307]:
+                - img [ref=e308]
+                - text: 20 students
+            - generic [ref=e310]:
+              - generic [ref=e311]: MS
+              - generic [ref=e312]:
+                - paragraph [ref=e313]: Maulana Saifullah Nadwi
+                - paragraph [ref=e314]: Instructor
+          - link "View Course Details" [ref=e316] [cursor=pointer]:
+            - /url: /courses/ibadur-rahman
+        - article [ref=e318]:
+          - generic [ref=e319]:
+            - img [ref=e323]
+            - generic [ref=e326]: Momina Program
+            - generic [ref=e328]: Beginner
+          - generic [ref=e329]:
+            - heading "Momina Program (2-Year)" [level=3] [ref=e330]
+            - paragraph [ref=e331]: A holistic two-year program for women covering Quran recitation, essential fiqh, family life, and spiritual development.
+            - generic [ref=e332]:
+              - generic [ref=e333]:
+                - img [ref=e334]
+                - text: 2 Years
+              - generic [ref=e336]:
+                - img [ref=e337]
+                - text: 22 students
+            - generic [ref=e339]:
+              - generic [ref=e340]: UM
+              - generic [ref=e341]:
+                - paragraph [ref=e342]: Ustadha Maryam Siddiq
+                - paragraph [ref=e343]: Instructor
+          - link "View Course Details" [ref=e345] [cursor=pointer]:
+            - /url: /courses/momina-program
+        - article [ref=e347]:
+          - generic [ref=e348]:
+            - img [ref=e352]
+            - generic [ref=e355]: Alimiyat Studies
+            - generic [ref=e357]: Advanced
+          - generic [ref=e358]:
+            - heading "Bachelor of Alimiyat (5-Year)" [level=3] [ref=e359]
+            - paragraph [ref=e360]: A comprehensive five-year scholarship program in classical Islamic sciences, designed to train future scholars and teachers.
+            - generic [ref=e361]:
+              - generic [ref=e362]:
+                - img [ref=e363]
+                - text: 5 Years
+              - generic [ref=e365]:
+                - img [ref=e366]
+                - text: 15 students
+            - generic [ref=e368]:
+              - generic [ref=e369]: MI
+              - generic [ref=e370]:
+                - paragraph [ref=e371]: Mufti Ibrahim Qasmi
+                - paragraph [ref=e372]: Instructor
+          - link "View Course Details" [ref=e374] [cursor=pointer]:
+            - /url: /courses/bachelor-alimiyat
+      - link "View Long-term Courses" [ref=e376] [cursor=pointer]:
+        - /url: /courses
+        - text: View Long-term Courses
+        - img [ref=e377]
+    - generic [ref=e380]:
+      - generic [ref=e381]:
+        - generic [ref=e382]: Leadership Team
+        - heading "Guided by Scholars and Mentors" [level=2] [ref=e383]
+        - paragraph [ref=e384]: Islamic Hubb is led by experienced scholars who nurture students with knowledge, discipline, and care.
+      - generic [ref=e385]:
+        - generic [ref=e387]:
+          - generic [ref=e388]:
+            - generic [ref=e390]: MI
+            - generic [ref=e392]: 18+ Years Experience
+          - generic [ref=e393]:
+            - heading "Mufti Ibrahim Qasmi" [level=3] [ref=e394]
+            - paragraph [ref=e395]: Principal & Head of Alimiyat
+            - paragraph [ref=e396]: Mufti Ibrahim leads Islamic Hubb's academic vision, overseeing the Alimiyat curriculum and mentoring senior students in fiqh and tafsir.
+            - generic [ref=e397]:
+              - generic [ref=e398]: Fiqh
+              - generic [ref=e399]: Usul al-Fiqh
+              - generic [ref=e400]: "+1"
+            - generic [ref=e401]:
+              - img [ref=e402]
+              - text: Arabic, Urdu, English
+        - generic [ref=e405]:
+          - generic [ref=e406]:
+            - generic [ref=e408]: SM
+            - generic [ref=e410]: 14+ Years Experience
+          - generic [ref=e411]:
+            - heading "Sheikh Muhammad Arshad" [level=3] [ref=e412]
+            - paragraph [ref=e413]: Head of Quran Memorization
+            - paragraph [ref=e414]: Sheikh Muhammad supervises the Hifz department and ensures every student receives disciplined revision plans and tajweed refinement.
+            - generic [ref=e415]:
+              - generic [ref=e416]: Hifz
+              - generic [ref=e417]: Tajweed
+              - generic [ref=e418]: "+1"
+            - generic [ref=e419]:
+              - img [ref=e420]
+              - text: Arabic, Urdu, Telugu
+        - generic [ref=e423]:
+          - generic [ref=e424]:
+            - generic [ref=e426]: UM
+            - generic [ref=e428]: 12+ Years Experience
+          - generic [ref=e429]:
+            - heading "Ustadha Maryam Siddiq" [level=3] [ref=e430]
+            - paragraph [ref=e431]: Director of Women's Programs
+            - paragraph [ref=e432]: Ustadha Maryam designs and leads the Momina program, empowering women through Quranic learning, family guidance, and spiritual development.
+            - generic [ref=e433]:
+              - generic [ref=e434]: Women’s Education
+              - generic [ref=e435]: Tazkiyah
+              - generic [ref=e436]: "+1"
+            - generic [ref=e437]:
+              - img [ref=e438]
+              - text: Urdu, English, Telugu
+        - generic [ref=e441]:
+          - generic [ref=e442]:
+            - generic [ref=e444]: MS
+            - generic [ref=e446]: 16+ Years Experience
+          - generic [ref=e447]:
+            - heading "Maulana Saifullah Nadwi" [level=3] [ref=e448]
+            - paragraph [ref=e449]: Academic Coordinator
+            - paragraph [ref=e450]: Maulana Saifullah oversees curriculum planning, teacher training, and student assessments across all long-term and short-term courses.
+            - generic [ref=e451]:
+              - generic [ref=e452]: Curriculum Design
+              - generic [ref=e453]: Seerah
+              - generic [ref=e454]: "+1"
+            - generic [ref=e455]:
+              - img [ref=e456]
+              - text: Urdu, Arabic, English
+      - link "Meet the Leadership Team" [ref=e459] [cursor=pointer]:
+        - /url: /instructors
+        - text: Meet the Leadership Team
+        - img [ref=e460]
+    - generic [ref=e465]:
+      - generic [ref=e466]:
+        - generic [ref=e467]:
+          - img [ref=e468]
+          - text: Student Testimonials
+        - heading "What Our Students Say" [level=2] [ref=e470]
+        - paragraph [ref=e471]: Join thousands of satisfied students who have transformed their lives through our programs.
+      - generic [ref=e472]:
+        - generic [ref=e474]:
+          - generic [ref=e475]:
+            - img [ref=e476]
+            - img [ref=e478]
+            - img [ref=e480]
+            - img [ref=e482]
+            - img [ref=e484]
+          - blockquote [ref=e486]: "\"The Momina program helped me perfect my recitation and understand the fiqh of daily worship. The teachers were compassionate and the sisterhood was uplifting.\""
+          - generic [ref=e487]:
+            - generic [ref=e488]: AR
+            - generic [ref=e489]:
+              - generic [ref=e490]: Ayesha Rahman
+              - generic [ref=e491]: Momina Program Graduate
+              - generic [ref=e492]: Momina Program
+        - generic [ref=e494]:
+          - generic [ref=e495]:
+            - img [ref=e496]
+            - img [ref=e498]
+            - img [ref=e500]
+            - img [ref=e502]
+            - img [ref=e504]
+          - blockquote [ref=e506]: "\"Islamic Hubb's Hifz routine kept me disciplined. Weekly tasmi and revision circles made it possible to memorize steadily while staying focused on tajweed.\""
+          - generic [ref=e507]:
+            - generic [ref=e508]: IK
+            - generic [ref=e509]:
+              - generic [ref=e510]: Imran Khan
+              - generic [ref=e511]: Hifz Student
+              - generic [ref=e512]: Quran Memorization
+        - generic [ref=e514]:
+          - generic [ref=e515]:
+            - img [ref=e516]
+            - img [ref=e518]
+            - img [ref=e520]
+            - img [ref=e522]
+            - img [ref=e524]
+          - blockquote [ref=e526]: "\"I finally learned the essentials of prayer and daily duas. The short-term course fit my schedule and gave me confidence in my worship.\""
+          - generic [ref=e527]:
+            - generic [ref=e528]: SB
+            - generic [ref=e529]:
+              - generic [ref=e530]: Sara Begum
+              - generic [ref=e531]: Asasi Deeniyat Learner
+              - generic [ref=e532]: Asasi Deeniyat
+      - link "Read More Testimonials" [ref=e534] [cursor=pointer]:
+        - /url: /testimonials
+        - text: Read More Testimonials
+        - img [ref=e535]
+    - generic [ref=e538]:
+      - generic [ref=e539]:
+        - generic [ref=e540]: Upcoming Events
+        - heading "Join Our Community Events" [level=2] [ref=e541]
+        - paragraph [ref=e542]: Attend our seminars, workshops, and conferences to deepen your knowledge and connect with fellow seekers.
+      - paragraph [ref=e544]: Check back soon for upcoming events!
+      - link "View All Events" [ref=e546] [cursor=pointer]:
+        - /url: /events
+        - text: View All Events
+        - img [ref=e547]
+    - generic [ref=e550]:
+      - generic [ref=e551]:
+        - generic [ref=e552]: FAQ
+        - heading "Frequently Asked Questions" [level=2] [ref=e553]
+        - paragraph [ref=e554]: Find answers to common questions about our programs, admissions, and learning experience.
+      - generic [ref=e555]:
+        - generic [ref=e556]:
+          - group [ref=e558]:
+            - generic "Admissions How do I apply for a long-term course?" [ref=e559] [cursor=pointer]:
+              - generic [ref=e560]:
+                - generic [ref=e561]: Admissions
+                - heading "How do I apply for a long-term course?" [level=3] [ref=e562]
+              - img [ref=e564]
+          - group [ref=e567]:
+            - generic "Courses What are the class timings?" [ref=e568] [cursor=pointer]:
+              - generic [ref=e569]:
+                - generic [ref=e570]: Courses
+                - heading "What are the class timings?" [level=3] [ref=e571]
+              - img [ref=e573]
+          - group [ref=e576]:
+            - generic "General Do you provide separate classes for sisters?" [ref=e577] [cursor=pointer]:
+              - generic [ref=e578]:
+                - generic [ref=e579]: General
+                - heading "Do you provide separate classes for sisters?" [level=3] [ref=e580]
+              - img [ref=e582]
+          - group [ref=e585]:
+            - generic "Admissions Is there a placement assessment?" [ref=e586] [cursor=pointer]:
+              - generic [ref=e587]:
+                - generic [ref=e588]: Admissions
+                - heading "Is there a placement assessment?" [level=3] [ref=e589]
+              - img [ref=e591]
+          - group [ref=e594]:
+            - generic "Courses Are certificates provided after completion?" [ref=e595] [cursor=pointer]:
+              - generic [ref=e596]:
+                - generic [ref=e597]: Courses
+                - heading "Are certificates provided after completion?" [level=3] [ref=e598]
+              - img [ref=e600]
+          - group [ref=e603]:
+            - generic "General Can working professionals join short-term courses?" [ref=e604] [cursor=pointer]:
+              - generic [ref=e605]:
+                - generic [ref=e606]: General
+                - heading "Can working professionals join short-term courses?" [level=3] [ref=e607]
+              - img [ref=e609]
+        - generic [ref=e611]:
+          - paragraph [ref=e612]: Still have questions?
+          - link "Contact Us" [ref=e613] [cursor=pointer]:
+            - /url: /contact
+            - text: Contact Us
+            - img [ref=e614]
+    - generic [ref=e622]:
+      - generic [ref=e624]:
+        - img [ref=e625]
+        - text: Start Your Journey Today
+      - heading "Ready to Begin Your Path to Knowledge?" [level=2] [ref=e628]
+      - paragraph [ref=e630]: Join our community of dedicated learners and take the first step towards deepening your understanding of Islam.
+      - generic [ref=e632]:
+        - link "Browse Courses" [ref=e633] [cursor=pointer]:
+          - /url: /courses
+          - text: Browse Courses
+          - img [ref=e634]
+        - link "Contact Us" [ref=e636] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e638]:
+        - paragraph [ref=e639]: Trusted by families across Hyderabad and beyond
+        - generic [ref=e640]:
+          - generic [ref=e641]:
+            - img [ref=e642]
+            - generic [ref=e644]: Authentic Sources
+          - generic [ref=e645]:
+            - img [ref=e646]
+            - generic [ref=e648]: Flexible Learning
+          - generic [ref=e649]:
+            - img [ref=e650]
+            - generic [ref=e652]: Recognized Certificates
+  - contentinfo [ref=e653]:
+    - generic [ref=e656]:
+      - generic [ref=e657]:
+        - heading "Stay Connected" [level=3] [ref=e658]
+        - paragraph [ref=e659]: Subscribe to receive updates on courses, events, and Islamic reminders.
+      - generic [ref=e660]:
+        - textbox "Enter your email" [ref=e661]
+        - button "Subscribe" [ref=e662] [cursor=pointer]
+    - generic [ref=e664]:
+      - generic [ref=e665]:
+        - link "H Islamic Hubb Institute" [ref=e666] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e667]: H
+          - generic [ref=e668]:
+            - text: Islamic Hubb
+            - generic [ref=e669]: Institute
+        - paragraph [ref=e670]: Islamic Hubb is a dedicated center for Quranic learning and Islamic sciences, offering structured long-term and short-term programs for children, youth, and adults. Our classes blend traditional scholarship with caring mentorship so every student grows in knowledge, adab, and service.
+        - generic [ref=e671]:
+          - link "Facebook" [ref=e672] [cursor=pointer]:
+            - /url: https://facebook.com/islamichubb
+            - generic [ref=e673]: Facebook
+            - img [ref=e674]
+          - link "Instagram" [ref=e676] [cursor=pointer]:
+            - /url: https://instagram.com/islamichubb
+            - generic [ref=e677]: Instagram
+            - img [ref=e678]
+          - link "YouTube" [ref=e680] [cursor=pointer]:
+            - /url: https://youtube.com/@islamichubb
+            - generic [ref=e681]: YouTube
+            - img [ref=e682]
+      - generic [ref=e684]:
+        - heading "Courses" [level=4] [ref=e685]
+        - list [ref=e686]:
+          - listitem [ref=e687]:
+            - link "Tajweed & Deeniyat" [ref=e688] [cursor=pointer]:
+              - /url: /courses/tajweed-deeniyat
+          - listitem [ref=e689]:
+            - link "Quran Memorization" [ref=e690] [cursor=pointer]:
+              - /url: /courses/quran-memorization
+          - listitem [ref=e691]:
+            - link "Ibadur Rahman" [ref=e692] [cursor=pointer]:
+              - /url: /courses/ibadur-rahman
+          - listitem [ref=e693]:
+            - link "All Long-term Courses" [ref=e694] [cursor=pointer]:
+              - /url: /courses
+      - generic [ref=e695]:
+        - heading "About" [level=4] [ref=e696]
+        - list [ref=e697]:
+          - listitem [ref=e698]:
+            - link "About Islamic Hubb" [ref=e699] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e700]:
+            - link "Leadership Team" [ref=e701] [cursor=pointer]:
+              - /url: /about#leadership
+          - listitem [ref=e702]:
+            - link "Testimonials" [ref=e703] [cursor=pointer]:
+              - /url: /testimonials
+          - listitem [ref=e704]:
+            - link "FAQ" [ref=e705] [cursor=pointer]:
+              - /url: /faq
+      - generic [ref=e706]:
+        - heading "Contact Us" [level=4] [ref=e707]
+        - list [ref=e708]:
+          - listitem [ref=e709]:
+            - img [ref=e710]
+            - generic [ref=e713]:
+              - text: Masjid Lane, Old City
+              - text: Hyderabad, Telangana, India
+          - listitem [ref=e714]:
+            - img [ref=e715]
+            - link "islamichubb@gmail.com" [ref=e717] [cursor=pointer]:
+              - /url: mailto:islamichubb@gmail.com
+          - listitem [ref=e718]:
+            - img [ref=e719]
+            - generic [ref=e721]:
+              - link "+91 97003-62205" [ref=e722] [cursor=pointer]:
+                - /url: tel:+9197003-62205
+              - link "+91 70328-35053" [ref=e723] [cursor=pointer]:
+                - /url: tel:+9170328-35053
+    - generic [ref=e726]:
+      - paragraph [ref=e727]: © 2026 Islamic Hubb. All rights reserved.
+      - generic [ref=e728]:
+        - link "Short-term Courses" [ref=e729] [cursor=pointer]:
+          - /url: /programs
+        - link "Events" [ref=e730] [cursor=pointer]:
+          - /url: /events
+        - link "Contact Us" [ref=e731] [cursor=pointer]:
+          - /url: /contact

@@ -13,56 +13,52 @@
           "href": "/about"
         },
         {
-          "label": "Mission & Vision",
+          "label": "Vision & Mission",
           "href": "/about#mission"
         },
         {
-          "label": "Our Team",
-          "href": "/instructors"
+          "label": "Leadership Team",
+          "href": "/about#leadership"
         }
       ]
     },
     {
-      "label": "Programs",
-      "href": "/programs",
-      "children": [
-        {
-          "label": "All Programs",
-          "href": "/programs"
-        },
-        {
-          "label": "Foundations of Islam",
-          "href": "/programs/foundations-islam"
-        },
-        {
-          "label": "Scholar Track",
-          "href": "/programs/scholar-track"
-        },
-        {
-          "label": "Quran Specialist",
-          "href": "/programs/quran-specialist"
-        }
-      ]
-    },
-    {
-      "label": "Courses",
+      "label": "Long-term Courses",
       "href": "/courses",
       "children": [
         {
-          "label": "All Courses",
+          "label": "All Long-term Courses",
           "href": "/courses"
         },
         {
-          "label": "Quran Studies",
-          "href": "/courses?q=quran"
+          "label": "Tajweed & Deeniyat",
+          "href": "/courses/tajweed-deeniyat"
         },
         {
-          "label": "Arabic Language",
-          "href": "/courses?q=arabic"
+          "label": "Quran Memorization",
+          "href": "/courses/quran-memorization"
         },
         {
-          "label": "Islamic Sciences",
-          "href": "/courses?q=fiqh"
+          "label": "Bachelor of Alimiyat",
+          "href": "/courses/bachelor-alimiyat"
+        }
+      ]
+    },
+    {
+      "label": "Short-term Courses",
+      "href": "/programs",
+      "children": [
+        {
+          "label": "Pre Alimiyat",
+          "href": "/programs/pre-alimiyat"
+        },
+        {
+          "label": "Tasheeh & Teaching",
+          "href": "/programs/tasheeh-teaching"
+        },
+        {
+          "label": "Asasi Deeniyat",
+          "href": "/programs/asasi-deeniyat"
         }
       ]
     },
@@ -78,56 +74,52 @@
   "footerNav": {
     "courses": [
       {
+        "label": "Tajweed & Deeniyat",
+        "href": "/courses/tajweed-deeniyat"
+      },
+      {
         "label": "Quran Memorization",
         "href": "/courses/quran-memorization"
       },
       {
-        "label": "Arabic Language",
-        "href": "/courses/arabic-intensive"
+        "label": "Ibadur Rahman",
+        "href": "/courses/ibadur-rahman"
       },
       {
-        "label": "Fiqh Studies",
-        "href": "/courses/fiqh-essentials"
-      },
-      {
-        "label": "All Courses",
+        "label": "All Long-term Courses",
         "href": "/courses"
       }
     ],
     "about": [
       {
-        "label": "About Us",
+        "label": "About Islamic Hubb",
         "href": "/about"
       },
       {
-        "label": "Our Instructors",
-        "href": "/instructors"
+        "label": "Leadership Team",
+        "href": "/about#leadership"
       },
       {
         "label": "Testimonials",
         "href": "/testimonials"
       },
       {
-        "label": "Careers",
-        "href": "/careers"
+        "label": "FAQ",
+        "href": "/faq"
       }
     ],
     "support": [
       {
-        "label": "Help Center",
-        "href": "/faq"
+        "label": "Short-term Courses",
+        "href": "/programs"
+      },
+      {
+        "label": "Events",
+        "href": "/events"
       },
       {
         "label": "Contact Us",
         "href": "/contact"
-      },
-      {
-        "label": "Privacy Policy",
-        "href": "/privacy"
-      },
-      {
-        "label": "Terms of Service",
-        "href": "/terms"
       }
     ]
   }

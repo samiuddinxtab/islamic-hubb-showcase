@@ -43,8 +43,9 @@ export function capitalizeWords(str: string): string {
   return str.replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
-export function generateMetaTitle(title: string, siteName: string = 'Islamic Hubb Institute'): string {
-  if (!title || title === siteName) return siteName;
+export function generateMetaTitle(title: string, siteName: string = 'Islamic Hubb'): string {
+  if (!title) return siteName;
+  if (title.includes(siteName)) return title;
   return `${title} | ${siteName}`;
 }
 
@@ -55,14 +56,11 @@ export function generateCanonicalUrl(path: string, siteUrl: string = 'https://is
 
 export function getCourseCategoryLabel(category: string): string {
   const labels: Record<string, string> = {
-    quran: 'Quran Studies',
-    arabic: 'Arabic Language',
-    fiqh: 'Fiqh & Jurisprudence',
-    aqeedah: 'Aqeedah & Theology',
-    hadith: 'Hadith Studies',
-    seerah: 'Seerah & History',
-    tajweed: 'Tajweed & Recitation',
-    'islamic-history': 'Islamic History',
+    tajweed: 'Tajweed & Deeniyat',
+    hifz: 'Quran Memorization',
+    'ibadur-rahman': 'Ibadur Rahman',
+    momina: 'Momina Program',
+    alimiyat: 'Alimiyat Studies',
   };
   return labels[category] || capitalize(category);
 }

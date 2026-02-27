@@ -1,108 +1,65 @@
 {
   "programs": [
     {
-      "id": "foundations-islam",
-      "title": "Foundations of Islam",
-      "subtitle": "Essential Knowledge for Every Muslim",
-      "description": "A comprehensive foundational program designed for new Muslims and those seeking to strengthen their basic Islamic knowledge. Covers the pillars of faith and practice.",
+      "id": "pre-alimiyat",
+      "title": "Pre Alimiyat",
+      "subtitle": "Preparation Track for Advanced Studies",
+      "description": "A bridge program for students who want to enter the Alimiyat course, focusing on Arabic foundations, Quran recitation, and study skills.",
+      "duration": "10 Months",
+      "commitment": "6 hours per week",
+      "courses": [
+        "Arabic Reading & Writing",
+        "Tajweed Refresher",
+        "Introductory Fiqh",
+        "Study Skills & Memorization"
+      ],
+      "outcomes": [
+        "Confidence in Arabic literacy",
+        "Strong tajweed foundation",
+        "Readiness for Alimiyat entrance",
+        "Improved study discipline"
+      ],
+      "featured": true
+    },
+    {
+      "id": "tasheeh-teaching",
+      "title": "Tasheeh & Teaching",
+      "subtitle": "Correct Recitation and Teaching Skills",
+      "description": "A focused short-term course to correct Quran recitation and train aspiring teachers with proper methodology and lesson planning.",
       "duration": "6 Months",
       "commitment": "4 hours per week",
       "courses": [
-        "Aqeedah Fundamentals",
-        "Fiqh of Worship",
-        "Introduction to Quran",
-        "Life of the Prophet"
+        "Tajweed Correction Sessions",
+        "Makharij & Sifaat Clinic",
+        "Teaching Methodology",
+        "Lesson Planning & Assessments"
       ],
       "outcomes": [
-        "Solid understanding of Islamic beliefs",
-        "Ability to perform prayers correctly",
-        "Basic Quranic reading skills",
-        "Knowledge of the Prophet's life"
+        "Accurate Quran recitation",
+        "Ability to teach beginners",
+        "Improved confidence in public recitation",
+        "Structured lesson planning skills"
       ],
       "featured": true
     },
     {
-      "id": "scholar-track",
-      "title": "Scholar Track",
-      "subtitle": "Advanced Islamic Studies",
-      "description": "An intensive program for serious students aspiring to become scholars. Deep dive into Islamic sciences with traditional teaching methodologies.",
-      "duration": "4 Years",
-      "commitment": "15-20 hours per week",
-      "courses": [
-        "Advanced Fiqh",
-        "Usul al-Fiqh",
-        "Advanced Hadith Studies",
-        "Arabic Literature",
-        "Tafsir Methodology"
-      ],
-      "outcomes": [
-        "Comprehensive Islamic scholarship",
-        "Ability to derive legal rulings",
-        "Teaching credentials",
-        "Ijazat in major texts"
-      ],
-      "featured": true
-    },
-    {
-      "id": "quran-specialist",
-      "title": "Quran Specialist",
-      "subtitle": "Master the Book of Allah",
-      "description": "Focus entirely on Quranic sciences - memorization, recitation, understanding, and teaching. For those who want to dedicate themselves to the Quran.",
-      "duration": "3 Years",
-      "commitment": "10-15 hours per week",
-      "courses": [
-        "Complete Quran Memorization",
-        "Advanced Tajweed",
-        "Tafsir Studies",
-        "Qira'at Studies"
-      ],
-      "outcomes": [
-        "Complete Hifz of the Quran",
-        "Ijazah in Tajweed",
-        "Understanding of Tafsir",
-        "Ability to teach Quran"
-      ],
-      "featured": false
-    },
-    {
-      "id": "professional-muslim",
-      "title": "Professional Muslim",
-      "subtitle": "Balance Career and Faith",
-      "description": "Designed for working professionals who want to grow spiritually without compromising their career. Flexible schedule with online components.",
-      "duration": "12 Months",
+      "id": "asasi-deeniyat",
+      "title": "Asasi Deeniyat",
+      "subtitle": "Essential Islamic Foundations",
+      "description": "An accessible course for families and working adults covering essential beliefs, worship, and daily Islamic etiquette.",
+      "duration": "6 Months",
       "commitment": "3 hours per week",
       "courses": [
-        "Islamic Ethics at Work",
-        "Time Management in Islam",
-        "Family Leadership",
-        "Contemporary Fiqh Issues"
+        "Pillars of Islam",
+        "Daily Duas & Adhkar",
+        "Fiqh of Prayer and Fasting",
+        "Seerah & Muslim Character"
       ],
       "outcomes": [
-        "Islamic professional ethics",
-        "Balanced life management",
-        "Leadership skills",
-        "Community contribution"
-      ],
-      "featured": false
-    },
-    {
-      "id": "youth-leadership",
-      "title": "Youth Leadership",
-      "subtitle": "Building Tomorrow's Leaders",
-      "description": "Empowering Muslim youth with knowledge, character, and leadership skills. Age-appropriate curriculum for teenagers and young adults.",
-      "duration": "2 Years",
-      "commitment": "5 hours per week",
-      "courses": [
-        "Islamic Identity",
-        "Leadership Principles",
-        "Dawah Skills",
-        "Media Literacy"
-      ],
-      "outcomes": [
-        "Strong Islamic identity",
-        "Leadership capabilities",
-        "Effective communication",
-        "Community service mindset"
+        "Clarity on core Islamic beliefs",
+        "Confidence in daily worship",
+        "Strengthened Islamic identity",
+        "Practical guidance for family life"
       ],
       "featured": true
     }

@@ -14,7 +14,7 @@ export interface InstituteInfo {
   };
   contact: {
     email: string;
-    phone: string;
+    phones: string[];
     whatsapp?: string;
   };
   social: {
@@ -40,17 +40,15 @@ export interface Course {
   image?: string;
   features: string[];
   curriculum: string[];
+  rules: string[];
 }
 
-export type CourseCategory = 
-  | 'quran'
-  | 'arabic'
-  | 'fiqh'
-  | 'aqeedah'
-  | 'hadith'
-  | 'seerah'
+export type CourseCategory =
   | 'tajweed'
-  | 'islamic-history';
+  | 'hifz'
+  | 'ibadur-rahman'
+  | 'momina'
+  | 'alimiyat';
 
 export interface Instructor {
   id: string;
