@@ -1,6 +1,42 @@
 {
   "instructors": [
     {
+      "id": "abu-bakar-jabir-qasmi",
+      "name": "Hazrat Mufti Abu Bakar Jabir Qasmi",
+      "title": "Chief Adviser",
+      "bio": "Hazrat Mufti Abu Bakar Jabir Qasmi serves as the Chief Adviser at Islamic Hubb, providing strategic guidance and spiritual oversight to ensure the institution upholds the highest standards of Islamic scholarship and education.",
+      "qualifications": [
+        "Takhasus fil Fiqh from Darul Uloom Deoband",
+        "Ijazah in Hadith and Quran",
+        "Renowned Islamic Scholar"
+      ],
+      "specializations": [
+        "Islamic Jurisprudence",
+        "Spiritual Guidance",
+        "Educational Leadership"
+      ],
+      "languages": ["Arabic", "Urdu", "English"],
+      "yearsOfExperience": 25
+    },
+    {
+      "id": "muhammad-kafeel-ahmed",
+      "name": "Mufti Muhammad Kafeel Ahmed",
+      "title": "Director",
+      "bio": "Mufti Muhammad Kafeel Ahmed leads the operational and academic direction of Islamic Hubb, ensuring that programs meet the needs of students while maintaining the highest educational standards.",
+      "qualifications": [
+        "Takhasus fil Fiqh from Darul Uloom Deoband",
+        "Ijazah in Multiple Quranic Recitations",
+        "Expert in Islamic Education Management"
+      ],
+      "specializations": [
+        "Program Development",
+        "Student Affairs",
+        "Community Outreach"
+      ],
+      "languages": ["Arabic", "Urdu", "English"],
+      "yearsOfExperience": 20
+    },
+    {
       "id": "ibrahim-qasmi",
       "name": "Mufti Ibrahim Qasmi",
       "title": "Principal & Head of Alimiyat",
