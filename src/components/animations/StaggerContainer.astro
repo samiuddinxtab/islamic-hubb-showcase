@@ -1,0 +1,49 @@
+---
+interface Props {
+  staggerDelay?: number;
+  class?: string;
+}
+
+const { staggerDelay = 0.1, class: className = '' } = Astro.props;
+---
+
+<div class:list={['stagger-container', className]} data-stagger-delay={staggerDelay}>
+  <slot />
+</div>
+
+<script>
+  const containers = document.querySelectorAll('[data-stagger-delay]');
+  
+  containers.forEach((container) => {
+    const children = container.children;
+    const staggerDelay = parseFloat(container.dataset.staggerDelay || '0.1') * 1000;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            Array.from(children).forEach((child, index) => {
+              const el = child as HTMLElement;
+              el.style.opacity = '0';
+              el.style.transform = 'translateY(20px)';
+              
+              setTimeout(() => {
+                el.style.transition = 'all 0.5s ease';
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+              }, index * staggerDelay);
+            });
+            
+            observer.unobserve(container);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      }
+    );
+    
+    observer.observe(container);
+  });
+</script>

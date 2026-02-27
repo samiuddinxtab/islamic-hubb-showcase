@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/sections/Hero.astro';
+import Features from '../components/sections/Features.astro';
+import Programs from '../components/sections/Programs.astro';
+import Courses from '../components/sections/Courses.astro';
+import Instructors from '../components/sections/Instructors.astro';
+import Testimonials from '../components/sections/Testimonials.astro';
+import Events from '../components/sections/Events.astro';
+import FAQ from '../components/sections/FAQ.astro';
+import CTA from '../components/sections/CTA.astro';
+import seoData from '../content/data/seo.json';
+
+const seo = seoData.pages.home;
+---
+
+<Layout seo={seo}>
+  <Hero />
+  <Features />
+  <Programs />
+  <Courses />
+  <Instructors />
+  <Testimonials />
+  <Events />
+  <FAQ />
+  <CTA />
+</Layout>

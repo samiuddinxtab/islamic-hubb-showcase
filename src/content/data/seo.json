@@ -1,0 +1,50 @@
+{
+  "default": {
+    "title": "Islamic Hubb Institute | Authentic Islamic Education",
+    "description": "Premier Islamic education institute offering Quran studies, Arabic language, Fiqh, and Islamic sciences. Join thousands of students worldwide seeking authentic knowledge.",
+    "keywords": [
+      "Islamic education",
+      "Quran classes",
+      "Arabic language",
+      "Islamic institute",
+      "online Islamic courses",
+      "Quran memorization",
+      "Islamic studies"
+    ],
+    "ogImage": "/images/og-default.jpg"
+  },
+  "pages": {
+    "home": {
+      "title": "Islamic Hubb Institute | Authentic Islamic Education",
+      "description": "Begin your journey of Islamic knowledge with qualified scholars. Quran memorization, Arabic language, Fiqh, and more. Join our global learning community."
+    },
+    "about": {
+      "title": "About Us | Islamic Hubb Institute",
+      "description": "Learn about Islamic Hubb Institute's mission to provide authentic Islamic education. Founded in 2015, we've served over 5,000 students worldwide."
+    },
+    "courses": {
+      "title": "Courses | Islamic Hubb Institute",
+      "description": "Explore our comprehensive Islamic courses: Quran memorization, Arabic language, Fiqh, Aqeedah, Hadith, and more. Suitable for all levels."
+    },
+    "programs": {
+      "title": "Programs | Islamic Hubb Institute",
+      "description": "Structured learning programs from Foundations of Islam to Scholar Track. Choose the path that fits your goals and schedule."
+    },
+    "instructors": {
+      "title": "Our Instructors | Islamic Hubb Institute",
+      "description": "Learn from qualified scholars with decades of experience. Our instructors hold degrees from prestigious Islamic universities worldwide."
+    },
+    "events": {
+      "title": "Events | Islamic Hubb Institute",
+      "description": "Join our seminars, workshops, and conferences. Learn, connect, and grow with the Islamic Hubb community."
+    },
+    "contact": {
+      "title": "Contact Us | Islamic Hubb Institute",
+      "description": "Get in touch with Islamic Hubb Institute. Visit our campus in Dubai or reach us online. We're here to help you start your learning journey."
+    },
+    "faq": {
+      "title": "FAQ | Islamic Hubb Institute",
+      "description": "Find answers to frequently asked questions about admissions, courses, fees, and more at Islamic Hubb Institute."
+    }
+  }
+}

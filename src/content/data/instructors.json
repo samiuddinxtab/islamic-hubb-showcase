@@ -1,0 +1,118 @@
+{
+  "instructors": [
+    {
+      "id": "ahmad-hassan",
+      "name": "Sheikh Ahmad Hassan",
+      "title": "Head of Quran Studies",
+      "bio": "Sheikh Ahmad Hassan is a renowned Quran teacher with over 20 years of experience in teaching Quran memorization and Tajweed. He holds Ijazah in all 10 Qira'at and has trained hundreds of Huffaz (Quran memorizers).",
+      "qualifications": [
+        "Ijazah in all 10 Qira'at",
+        "Master's in Quranic Sciences from Al-Azhar University",
+        "Bachelor's in Sharia Law"
+      ],
+      "specializations": [
+        "Quran Memorization",
+        "Tajweed",
+        "Qira'at",
+        "Tafsir"
+      ],
+      "languages": ["Arabic", "English", "Urdu"],
+      "yearsOfExperience": 20
+    },
+    {
+      "id": "fatima-rashid",
+      "name": "Dr. Fatima Al-Rashid",
+      "title": "Arabic Language Director",
+      "bio": "Dr. Fatima Al-Rashid is a native Arabic speaker with a PhD in Arabic Linguistics. She has developed innovative teaching methods that help non-native speakers master Arabic in record time.",
+      "qualifications": [
+        "PhD in Arabic Linguistics from University of Jordan",
+        "Master's in Teaching Arabic to Non-Native Speakers",
+        "Cambridge CELTA Certification"
+      ],
+      "specializations": [
+        "Classical Arabic",
+        "Modern Standard Arabic",
+        "Arabic Grammar (Nahw)",
+        "Arabic Morphology (Sarf)"
+      ],
+      "languages": ["Arabic", "English", "French", "Spanish"],
+      "yearsOfExperience": 15
+    },
+    {
+      "id": "muhammad-faruqi",
+      "name": "Sheikh Muhammad Al-Faruqi",
+      "title": "Senior Fiqh Instructor",
+      "bio": "Sheikh Muhammad Al-Faruqi is a distinguished scholar of Islamic jurisprudence. He studied under leading scholars in Damascus and Makkah and brings deep traditional knowledge combined with understanding of contemporary issues.",
+      "qualifications": [
+        "Master's in Comparative Fiqh from Umm al-Qura University",
+        "Traditional Ijazat from scholars in Syria and Saudi Arabia",
+        "Bachelor's in Islamic Law"
+      ],
+      "specializations": [
+        "Hanafi Fiqh",
+        "Shafi'i Fiqh",
+        "Contemporary Fiqh Issues",
+        "Family Law"
+      ],
+      "languages": ["Arabic", "English", "Turkish"],
+      "yearsOfExperience": 18
+    },
+    {
+      "id": "yusuf-ibrahim",
+      "name": "Dr. Yusuf Ibrahim",
+      "title": "Aqeedah & Theology Professor",
+      "bio": "Dr. Yusuf Ibrahim specializes in Islamic theology and comparative religion. He helps students understand the foundations of Islamic belief and equips them to address modern ideological challenges.",
+      "qualifications": [
+        "PhD in Islamic Theology from Islamic University of Madinah",
+        "Master's in Comparative Religion",
+        "Bachelor's in Islamic Studies"
+      ],
+      "specializations": [
+        "Islamic Aqeedah",
+        "Comparative Religion",
+        "Modern Ideologies",
+        "Islamic Philosophy"
+      ],
+      "languages": ["Arabic", "English", "German"],
+      "yearsOfExperience": 12
+    },
+    {
+      "id": "abdullah-omar",
+      "name": "Sheikh Abdullah bin Omar",
+      "title": "Hadith Scholar",
+      "bio": "Sheikh Abdullah is a specialist in Hadith sciences with extensive training in authentication and chain analysis. He has memorized over 10,000 Hadith with their chains of narration.",
+      "qualifications": [
+        "Master's in Hadith Sciences from Islamic University of Madinah",
+        "Ijazah in Sahih al-Bukhari and Sahih Muslim",
+        "Studied under renowned Hadith scholars"
+      ],
+      "specializations": [
+        "Hadith Authentication",
+        "Hadith Terminology",
+        "Chain of Narration Analysis",
+        "Hadith Collections"
+      ],
+      "languages": ["Arabic", "English", "Urdu", "Persian"],
+      "yearsOfExperience": 25
+    },
+    {
+      "id": "aisha-rahman",
+      "name": "Dr. Aisha Rahman",
+      "title": "Seerah & Islamic History",
+      "bio": "Dr. Aisha Rahman brings Islamic history to life with her engaging teaching style. Her research focuses on the role of women in early Islamic history and she is passionate about making history relevant to modern Muslims.",
+      "qualifications": [
+        "PhD in Islamic History from SOAS, University of London",
+        "Master's in Seerah Studies",
+        "Bachelor's in History and Islamic Studies"
+      ],
+      "specializations": [
+        "Seerah of the Prophet",
+        "Early Islamic History",
+        "Women in Islam",
+        "Islamic Civilization"
+      ],
+      "languages": ["English", "Arabic", "Turkish"],
+      "yearsOfExperience": 10
+    }
+  ]
+}

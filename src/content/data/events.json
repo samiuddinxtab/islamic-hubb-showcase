@@ -1,0 +1,70 @@
+{
+  "events": [
+    {
+      "id": "ramadan-prep-2024",
+      "title": "Ramadan Preparation Seminar",
+      "description": "Get ready for the blessed month of Ramadan with practical tips on maximizing worship, maintaining health, and making this your best Ramadan yet.",
+      "date": "2024-03-01",
+      "time": "10:00 AM - 2:00 PM",
+      "location": "Main Auditorium",
+      "type": "seminar",
+      "registrationRequired": true,
+      "maxAttendees": 200
+    },
+    {
+      "id": "quran-competition",
+      "title": "Annual Quran Competition",
+      "description": "Showcase your Quran memorization and recitation skills. Categories for all age groups with valuable prizes and certificates.",
+      "date": "2024-04-15",
+      "time": "9:00 AM - 6:00 PM",
+      "location": "Institute Grand Hall",
+      "type": "community",
+      "registrationRequired": true,
+      "maxAttendees": 500
+    },
+    {
+      "id": "arabic-intensive-summer",
+      "title": "Summer Arabic Intensive",
+      "description": "Accelerate your Arabic learning this summer with our 4-week immersive program. Suitable for all levels.",
+      "date": "2024-06-15",
+      "time": "9:00 AM - 3:00 PM (Daily)",
+      "location": "Language Center",
+      "type": "workshop",
+      "registrationRequired": true,
+      "maxAttendees": 30
+    },
+    {
+      "id": "family-fiqh-night",
+      "title": "Family Fiqh Night",
+      "description": "Interactive family workshop on Islamic etiquettes, family rights, and raising righteous children in the modern world.",
+      "date": "2024-02-20",
+      "time": "6:00 PM - 9:00 PM",
+      "location": "Community Center",
+      "type": "workshop",
+      "registrationRequired": true,
+      "maxAttendees": 100
+    },
+    {
+      "id": "islamic-finance-webinar",
+      "title": "Islamic Finance Webinar",
+      "description": "Learn about halal investments, avoiding riba, and Islamic banking options. Open to international audience via Zoom.",
+      "date": "2024-03-10",
+      "time": "7:00 PM - 8:30 PM",
+      "location": "Online (Zoom)",
+      "type": "webinar",
+      "registrationRequired": true,
+      "maxAttendees": 1000
+    },
+    {
+      "id": "seerah-conference",
+      "title": "International Seerah Conference",
+      "description": "A two-day conference featuring international scholars discussing lessons from the Prophet's life for contemporary challenges.",
+      "date": "2024-05-25",
+      "time": "9:00 AM - 8:00 PM",
+      "location": "Grand Convention Center",
+      "type": "conference",
+      "registrationRequired": true,
+      "maxAttendees": 2000
+    }
+  ]
+}

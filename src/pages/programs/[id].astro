@@ -1,0 +1,185 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FadeIn from '../../components/animations/FadeIn.astro';
+import programsData from '../../content/data/programs.json';
+
+export function getStaticPaths() {
+  const { programs } = programsData;
+  return programs.map((program) => ({
+    params: { id: program.id },
+    props: { program },
+  }));
+}
+
+const { program } = Astro.props;
+
+const seo = {
+  title: `${program.title} | Islamic Hubb Institute`,
+  description: program.description,
+};
+---
+
+<Layout seo={seo}>
+  <!-- Hero -->
+  <section class="relative py-24 bg-gradient-to-br from-emerald-900 via-teal-900 to-emerald-800">
+    <div class="container-custom relative z-10">
+      <FadeIn>
+        <div class="max-w-4xl mx-auto">
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="badge bg-white/20 text-white">{program.duration}</span>
+            {program.featured && <span class="badge badge-secondary">Featured Program</span>}
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            {program.title}
+          </h1>
+          <p class="text-xl text-emerald-300 font-medium mb-6">{program.subtitle}</p>
+          <p class="text-lg text-emerald-100/80 max-w-2xl">
+            {program.description}
+          </p>
+        </div>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- Program Details -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="grid lg:grid-cols-3 gap-12">
+        <!-- Main Content -->
+        <div class="lg:col-span-2 space-y-12">
+          <FadeIn>
+            <div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-6">Program Overview</h2>
+              <p class="text-gray-600 leading-relaxed text-lg">{program.description}</p>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.1}>
+            <div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-6">Courses Included</h2>
+              <div class="grid md:grid-cols-2 gap-4">
+                {program.courses.map((course, idx) => (
+                  <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border-l-4 border-emerald-500">
+                    <span class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-semibold text-sm flex-shrink-0">
+                      {idx + 1}
+                    </span>
+                    <span class="text-gray-700 font-medium">{course}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.2}>
+            <div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-6">Learning Outcomes</h2>
+              <p class="text-gray-600 mb-6">By the end of this program, you will be able to:</p>
+              <div class="space-y-4">
+                {program.outcomes.map((outcome) => (
+                  <div class="flex items-start gap-4 p-4 bg-emerald-50 rounded-xl">
+                    <div class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span class="text-gray-700">{outcome}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.3}>
+            <div class="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl p-8 text-white">
+              <h2 class="text-2xl font-bold mb-4">Ready to Enroll?</h2>
+              <p class="text-emerald-100 mb-6">
+                Start your journey today. Our admissions team is ready to help you begin your path to knowledge.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a href="/contact" class="btn bg-white text-emerald-700 hover:bg-emerald-50">
+                  Apply Now
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+                <a href="/courses" class="btn border-2 border-white text-white hover:bg-white/10">
+                  Browse Courses
+                </a>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <FadeIn delay={0.3}>
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sticky top-24">
+              <h3 class="text-xl font-bold text-gray-900 mb-6">Program Details</h3>
+              
+              <div class="space-y-4 mb-8">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Duration</p>
+                    <p class="font-medium text-gray-900">{program.duration}</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Weekly Commitment</p>
+                    <p class="font-medium text-gray-900">{program.commitment}</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Total Courses</p>
+                    <p class="font-medium text-gray-900">{program.courses.length} Courses</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Certificate</p>
+                    <p class="font-medium text-gray-900">Upon Completion</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="/contact" class="btn-primary w-full justify-center">
+                Enroll Now
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+
+              <p class="text-center text-sm text-gray-500 mt-4">
+                Free consultation available
+              </p>
+            </div>
+          </FadeIn>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

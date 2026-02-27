@@ -1,0 +1,194 @@
+---
+import navigation from '../content/data/navigation.json';
+
+const currentPath = Astro.url.pathname;
+
+function isActive(href: string): boolean {
+  if (href === '/') {
+    return currentPath === '/';
+  }
+  return currentPath.startsWith(href);
+}
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm" id="mainHeader">
+  <div class="container-custom">
+    <nav class="flex items-center justify-between h-16 md:h-20">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2 group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition-transform">
+          H
+        </div>
+        <div class="hidden sm:block">
+          <span class="font-bold text-lg text-gray-900">Islamic Hubb</span>
+          <span class="block text-xs text-emerald-600 -mt-1">Institute</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center gap-1">
+        {navigation.mainNav.map((item) => (
+          <div class="relative group" data-nav-item>
+            <a
+              href={item.href}
+              class:list={[
+                'px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-1',
+                isActive(item.href)
+                  ? 'text-emerald-600 bg-emerald-50'
+                  : 'text-gray-700 hover:text-emerald-600 hover:bg-gray-50'
+              ]}
+            >
+              {item.label}
+              {item.children && (
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              )}
+            </a>
+            
+            {item.children && (
+              <div class="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top">
+                <div class="py-2">
+                  {item.children.map((child) => (
+                    <a
+                      href={child.href}
+                      class="block px-4 py-2 text-sm text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 transition-colors"
+                    >
+                      {child.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="/contact" class="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">
+          Contact
+        </a>
+        <a href="/courses" class="btn-primary text-sm">
+          Enroll Now
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        type="button"
+        class="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+        id="mobileMenuBtn"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 close-icon hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="lg:hidden hidden bg-white border-t" id="mobileMenu">
+    <div class="container-custom py-4">
+      <div class="space-y-1">
+        {navigation.mainNav.map((item) => (
+          <div class="mobile-nav-item">
+            {item.children ? (
+              <>
+                <button
+                  type="button"
+                  class="w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-lg transition-colors mobile-dropdown-btn"
+                  aria-expanded="false"
+                >
+                  {item.label}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform dropdown-arrow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div class="hidden pl-4 mt-1 space-y-1 mobile-dropdown">
+                  {item.children.map((child) => (
+                    <a
+                      href={child.href}
+                      class="block px-4 py-2 text-sm text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
+                    >
+                      {child.label}
+                    </a>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <a
+                href={item.href}
+                class:list={[
+                  'block px-4 py-3 text-sm font-medium rounded-lg transition-colors',
+                  isActive(item.href)
+                    ? 'text-emerald-600 bg-emerald-50'
+                    : 'text-gray-700 hover:text-emerald-600 hover:bg-gray-50'
+                ]}
+              >
+                {item.label}
+              </a>
+            )}
+          </div>
+        ))}
+      </div>
+      <div class="mt-4 pt-4 border-t">
+        <a href="/courses" class="btn-primary w-full justify-center">
+          Enroll Now
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="h-16 md:h-20"></div>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuIcon = mobileMenuBtn?.querySelector('.menu-icon');
+  const closeIcon = mobileMenuBtn?.querySelector('.close-icon');
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+    mobileMenuBtn.setAttribute('aria-expanded', String(!isExpanded));
+    mobileMenu?.classList.toggle('hidden');
+    menuIcon?.classList.toggle('hidden');
+    closeIcon?.classList.toggle('hidden');
+  });
+
+  // Mobile dropdowns
+  const dropdownBtns = document.querySelectorAll('.mobile-dropdown-btn');
+  dropdownBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!isExpanded));
+      const dropdown = btn.nextElementSibling;
+      const arrow = btn.querySelector('.dropdown-arrow');
+      dropdown?.classList.toggle('hidden');
+      arrow?.classList.toggle('rotate-180');
+    });
+  });
+
+  // Header scroll effect
+  const header = document.getElementById('mainHeader');
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 50) {
+      header?.classList.add('shadow-md');
+    } else {
+      header?.classList.remove('shadow-md');
+    }
+    
+    lastScroll = currentScroll;
+  });
+</script>

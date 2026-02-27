@@ -1,0 +1,165 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FadeIn from '../../components/animations/FadeIn.astro';
+import eventsData from '../../content/data/events.json';
+import { formatDate, getEventTypeLabel } from '../../utils/helpers';
+
+export function getStaticPaths() {
+  const { events } = eventsData;
+  return events.map((event) => ({
+    params: { id: event.id },
+    props: { event },
+  }));
+}
+
+const { event } = Astro.props;
+
+const typeColors: Record<string, string> = {
+  seminar: 'bg-blue-100 text-blue-800',
+  workshop: 'bg-amber-100 text-amber-800',
+  conference: 'bg-purple-100 text-purple-800',
+  webinar: 'bg-emerald-100 text-emerald-800',
+  community: 'bg-rose-100 text-rose-800',
+};
+
+const eventDate = new Date(event.date);
+const isPast = eventDate < new Date();
+
+const seo = {
+  title: `${event.title} | Islamic Hubb Institute`,
+  description: event.description,
+};
+---
+
+<Layout seo={seo}>
+  <!-- Hero -->
+  <section class="relative py-24 bg-gradient-to-br from-emerald-900 via-teal-900 to-emerald-800">
+    <div class="container-custom relative z-10">
+      <FadeIn>
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="flex flex-wrap justify-center gap-2 mb-6">
+            <span class={`badge ${typeColors[event.type] || 'bg-gray-100 text-gray-800'}`}>
+              {getEventTypeLabel(event.type)}
+            </span>
+            {isPast && <span class="badge bg-gray-100 text-gray-800">Past Event</span>}
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            {event.title}
+          </h1>
+          <p class="text-xl text-emerald-100">
+            {event.description}
+          </p>
+        </div>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- Event Details -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <div class="grid lg:grid-cols-3 gap-12">
+        <!-- Main Content -->
+        <div class="lg:col-span-2">
+          <FadeIn>
+            <div class="prose prose-lg max-w-none">
+              <h2 class="text-3xl font-bold text-gray-900 mb-6">About This Event</h2>
+              <p class="text-gray-600 leading-relaxed">{event.description}</p>
+            </div>
+          </FadeIn>
+
+          {!isPast && event.registrationRequired && (
+            <FadeIn delay={0.2}>
+              <div class="mt-12 bg-emerald-50 rounded-2xl p-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Registration</h2>
+                <p class="text-gray-600 mb-6">
+                  Registration is required for this event. Please reserve your spot as soon as possible.
+                  {event.maxAttendees && ` Limited to ${event.maxAttendees} attendees.`}
+                </p>
+                <a href="/contact" class="btn-primary">
+                  Register Now
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
+            </FadeIn>
+          )}
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <FadeIn delay={0.3}>
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 sticky top-24">
+              <h3 class="text-xl font-bold text-gray-900 mb-6">Event Details</h3>
+              
+              <div class="space-y-4 mb-8">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Date</p>
+                    <p class="font-medium text-gray-900">{formatDate(event.date)}</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Time</p>
+                    <p class="font-medium text-gray-900">{event.time}</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Location</p>
+                    <p class="font-medium text-gray-900">{event.location}</p>
+                  </div>
+                </div>
+
+                {event.maxAttendees && (
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500">Capacity</p>
+                      <p class="font-medium text-gray-900">{event.maxAttendees} attendees</p>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {!isPast && event.registrationRequired && (
+                <a href="/contact" class="btn-primary w-full justify-center">
+                  Register Now
+                </a>
+              )}
+
+              {isPast && (
+                <p class="text-center text-gray-500 text-sm">
+                  This event has already taken place.
+                </p>
+              )}
+            </div>
+          </FadeIn>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

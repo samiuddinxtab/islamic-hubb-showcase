@@ -1,0 +1,75 @@
+---
+import faqData from '../../content/data/faq.json';
+import FadeIn from '../animations/FadeIn.astro';
+
+const { faq } = faqData;
+const featuredFAQ = faq.slice(0, 6);
+
+const categoryLabels: Record<string, string> = {
+  admissions: 'Admissions',
+  courses: 'Courses',
+  general: 'General',
+  financial: 'Financial',
+};
+---
+
+<section class="section-padding bg-gray-50">
+  <div class="container-custom">
+    <FadeIn class="text-center max-w-3xl mx-auto mb-16">
+      <span class="badge badge-primary mb-4">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">
+        Find answers to common questions about our programs, admissions, and learning experience.
+      </p>
+    </FadeIn>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="space-y-4">
+        {featuredFAQ.map((item, index) => (
+          <FadeIn delay={index * 0.05}>
+            <details class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                <div class="flex items-center gap-4">
+                  <span class="badge badge-secondary text-xs">{categoryLabels[item.category]}</span>
+                  <h3 class="font-semibold text-gray-900">{item.question}</h3>
+                </div>
+                <span class="ml-4 flex-shrink-0 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-open:bg-emerald-100 transition-colors">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    class="h-5 w-5 text-gray-500 group-open:text-emerald-600 transition-transform group-open:rotate-180" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="px-6 pb-6 pt-0">
+                <p class="text-gray-600 leading-relaxed pl-[calc(0.75rem+100px)]">
+                  {item.answer}
+                </p>
+              </div>
+            </details>
+          </FadeIn>
+        ))}
+      </div>
+
+      <FadeIn delay={0.4} class="text-center mt-10">
+        <p class="text-gray-600 mb-4">Still have questions?</p>
+        <a href="/contact" class="btn-primary">
+          Contact Us
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+        </a>
+      </FadeIn>
+    </div>
+  </div>
+</section>
+
+<style>
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

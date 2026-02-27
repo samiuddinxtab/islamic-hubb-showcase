@@ -1,0 +1,52 @@
+{
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Sarah Mohammed",
+      "role": "Medical Student",
+      "content": "The Quran memorization program at Islamic Hubb has transformed my life. The teachers are incredibly patient and the structured approach helped me complete my Hifz while maintaining my studies. I am forever grateful.",
+      "rating": 5,
+      "courseTaken": "Quran Memorization (Hifz)"
+    },
+    {
+      "id": "2",
+      "name": "Ahmed Khalil",
+      "role": "Software Engineer",
+      "content": "As a working professional, I needed a flexible program that wouldn't compromise on quality. The Intensive Arabic course was perfect - the evening classes and online resources allowed me to learn at my own pace.",
+      "rating": 5,
+      "courseTaken": "Intensive Arabic Language"
+    },
+    {
+      "id": "3",
+      "name": "Fatima Hassan",
+      "role": "Homemaker",
+      "content": "The Fiqh Essentials course clarified so many questions I had about daily practices. Sheikh Muhammad explains complex topics in such an accessible way. This knowledge has enriched my family's practice of Islam.",
+      "rating": 5,
+      "courseTaken": "Fiqh Essentials"
+    },
+    {
+      "id": "4",
+      "name": "Omar Farooq",
+      "role": "Business Owner",
+      "content": "I enrolled in the Aqeedah course to strengthen my faith, and it exceeded all my expectations. The evidence-based approach and addressing of modern doubts has given me confidence in my beliefs.",
+      "rating": 5,
+      "courseTaken": "Aqeedah Fundamentals"
+    },
+    {
+      "id": "5",
+      "name": "Amina Yusuf",
+      "role": "University Student",
+      "content": "The Seerah course brought the Prophet's life (PBUH) to life for me. Dr. Aisha's storytelling combined with historical context made every class inspiring. It changed how I view my role as a Muslim.",
+      "rating": 5,
+      "courseTaken": "Seerah: Life of the Prophet"
+    },
+    {
+      "id": "6",
+      "name": "Ibrahim Saleh",
+      "role": "Teacher",
+      "content": "The Tajweed Mastery course helped me correct years of pronunciation errors. Qari Khalid's individual attention to each student ensured I developed proper recitation habits. Highly recommended!",
+      "rating": 5,
+      "courseTaken": "Tajweed Mastery"
+    }
+  ]
+}

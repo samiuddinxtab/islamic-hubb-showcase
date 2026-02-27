@@ -1,0 +1,82 @@
+---
+import instructorsData from '../../content/data/instructors.json';
+import FadeIn from '../animations/FadeIn.astro';
+
+const { instructors } = instructorsData;
+const featuredInstructors = instructors.slice(0, 4);
+---
+
+<section class="section-padding bg-gray-50">
+  <div class="container-custom">
+    <FadeIn class="text-center max-w-3xl mx-auto mb-16">
+      <span class="badge badge-secondary mb-4">Our Team</span>
+      <h2 class="section-title">Learn from Qualified Scholars</h2>
+      <p class="section-subtitle">
+        Our instructors are graduates of prestigious Islamic universities with decades of teaching experience.
+      </p>
+    </FadeIn>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {featuredInstructors.map((instructor, index) => (
+        <FadeIn delay={index * 0.1} class="group">
+          <div class="h-full bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500">
+            <!-- Avatar -->
+            <div class="relative h-64 bg-gradient-to-br from-emerald-100 to-teal-100 overflow-hidden">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-32 h-32 rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center text-white text-4xl font-bold shadow-lg">
+                  {instructor.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                </div>
+              </div>
+              
+              <!-- Experience Badge -->
+              <div class="absolute bottom-4 left-4">
+                <span class="badge bg-white/90 text-emerald-700">
+                  {instructor.yearsOfExperience}+ Years Experience
+                </span>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-gray-900 mb-1">{instructor.name}</h3>
+              <p class="text-emerald-600 text-sm font-medium mb-3">{instructor.title}</p>
+              
+              <p class="text-gray-600 text-sm mb-4 line-clamp-3">{instructor.bio}</p>
+
+              <!-- Specializations -->
+              <div class="flex flex-wrap gap-2 mb-4">
+                {instructor.specializations.slice(0, 2).map((spec) => (
+                  <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded-full">
+                    {spec}
+                  </span>
+                ))}
+                {instructor.specializations.length > 2 && (
+                  <span class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded-full">
+                    +{instructor.specializations.length - 2}
+                  </span>
+                )}
+              </div>
+
+              <!-- Languages -->
+              <div class="flex items-center gap-2 text-sm text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                </svg>
+                {instructor.languages.slice(0, 3).join(', ')}
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+      ))}
+    </div>
+
+    <FadeIn delay={0.4} class="text-center mt-12">
+      <a href="/instructors" class="btn-outline">
+        Meet All Instructors
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </FadeIn>
+  </div>
+</section>
