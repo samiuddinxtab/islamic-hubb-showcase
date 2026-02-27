@@ -1,25 +1,42 @@
 {
   "name": "Islamic Hubb",
-  "tagline": "ISLAMIC HUBB • Nurturing Quranic Hearts",
+  "tagline": "ISLAMIC HUBB • Empowering Learners Since 2018",
   "description": "Islamic Hubb is a dedicated center for Quranic learning and Islamic sciences, offering structured long-term and short-term programs for children, youth, and adults. Our classes blend traditional scholarship with caring mentorship so every student grows in knowledge, adab, and service.",
-  "mission": "To cultivate a generation rooted in the Quran and Sunnah by providing authentic, accessible, and nurturing Islamic education that transforms lives and communities.",
-  "vision": "To be a trusted hub for Islamic learning in India that raises confident scholars, compassionate leaders, and God-conscious families.",
+  "mission": [
+    {
+      "title": "Accessible Education",
+      "description": "Making quality Islamic education accessible to every Muslim, regardless of location or background."
+    },
+    {
+      "title": "Authentic Knowledge",
+      "description": "Providing authentic knowledge of the Quran and Sunnah through qualified and renowned scholars."
+    },
+    {
+      "title": "Purposeful Living",
+      "description": "Empowering students to lead purposeful, God-conscious lives through practical application of Islamic teachings."
+    },
+    {
+      "title": "Community Building",
+      "description": "Building a global community of learners united in their pursuit of Islamic knowledge and spiritual growth."
+    }
+  ],
+  "vision": "To make quality Islamic education accessible to every Muslim, empowering them with the knowledge of the Quran and Sunnah to lead purposeful, God-conscious lives.",
   "values": [
     {
-      "title": "Quran-Centered Learning",
-      "description": "Every program strengthens recitation, understanding, and love of the Quran."
+      "title": "Excellence in Education",
+      "description": "We strive for the highest standards in Islamic education, combining traditional scholarship with modern teaching methods."
     },
     {
-      "title": "Tarbiya & Character",
-      "description": "We emphasize adab, discipline, and spiritual growth alongside academics."
+      "title": "Authentic Scholarship",
+      "description": "Our curriculum is rooted in the Quran and Sunnah, taught by qualified scholars with recognized credentials."
     },
     {
-      "title": "Community Service",
-      "description": "Students are guided to serve their families and neighborhoods with ihsan."
+      "title": "Inclusive Access",
+      "description": "We believe every Muslim deserves access to quality Islamic education, regardless of their circumstances."
     },
     {
-      "title": "Inclusive Mentorship",
-      "description": "Dedicated faculty support learners of all ages through personalized guidance."
+      "title": "Community & Service",
+      "description": "We nurture a spirit of service, encouraging students to contribute positively to their families and communities."
     }
   ],
   "founded": 2009,

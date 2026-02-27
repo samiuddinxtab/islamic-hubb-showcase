@@ -42,7 +42,23 @@ const { instructors } = instructorsData;
                 </svg>
               </div>
               <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
-              <p class="text-gray-600 leading-relaxed text-lg">{institute.mission}</p>
+              {Array.isArray(institute.mission) ? (
+                <ul class="space-y-4">
+                  {institute.mission.map((item) => (
+                    <li class="flex items-start gap-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <div>
+                        <h4 class="font-semibold text-gray-900">{item.title}</h4>
+                        <p class="text-gray-600">{item.description}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p class="text-gray-600 leading-relaxed text-lg">{institute.mission}</p>
+              )}
             </div>
           </div>
         </FadeIn>
@@ -105,7 +121,7 @@ const { instructors } = instructorsData;
         </p>
       </FadeIn>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {instructors.map((leader, index) => (
           <FadeIn delay={index * 0.1}>
             <div class="h-full bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">

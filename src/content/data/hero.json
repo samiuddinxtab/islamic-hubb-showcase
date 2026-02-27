@@ -1,9 +1,12 @@
 {
+  "branding": {
+    "tagline": "Empowering Learners Since 2018"
+  },
   "slides": [
     {
       "id": "slide-1",
       "title": "ISLAMIC HUBB",
-      "subtitle": "A Home for Quranic Excellence",
+      "subtitle": "Empowering Learners Since 2018",
       "description": "Guiding students with authentic scholarship, compassionate mentorship, and structured programs for every stage of learning.",
       "cta": {
         "primary": {
@@ -73,24 +76,34 @@
   ],
   "features": [
     {
-      "icon": "book",
-      "title": "Structured Quranic Curriculum",
-      "description": "Step-by-step syllabi with memorization targets, tajweed practice, and Islamic foundations."
+      "icon": "award",
+      "title": "Qualified and Renowned Scholars",
+      "description": "Learn from experienced and certified scholars with deep expertise in Islamic sciences."
     },
     {
-      "icon": "users",
-      "title": "Dedicated Mentorship",
-      "description": "Small class sizes and weekly feedback to keep every learner on track."
+      "icon": "video",
+      "title": "Flexible & Interactive Online Classes",
+      "description": "Attend live sessions from anywhere with interactive learning tools and real-time engagement."
+    },
+    {
+      "icon": "book",
+      "title": "Organized Learning System",
+      "description": "Structured curriculum designed for progressive learning at every level."
+    },
+    {
+      "icon": "laptop",
+      "title": "Modern Technology for Seamless Education",
+      "description": "State-of-the-art platform providing a smooth and accessible learning experience."
     },
     {
       "icon": "globe",
-      "title": "Community-Centered",
-      "description": "Programs designed to strengthen families, youth leadership, and community service."
+      "title": "Global Student Community",
+      "description": "Join a diverse community of learners from around the world united in seeking knowledge."
     },
     {
-      "icon": "award",
-      "title": "Recognized Certifications",
-      "description": "Completion certificates and ijazah pathways for committed students."
+      "icon": "clipboard-check",
+      "title": "Progress Tracking Through Exams",
+      "description": "Regular assessments to monitor your growth and ensure mastery of the material."
     }
   ]
 }
