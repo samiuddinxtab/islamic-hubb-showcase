@@ -4,6 +4,14 @@
       "id": "tajweed-deeniyat",
       "title": "Tajweed & Deeniyat (2-Year)",
       "description": "A foundational two-year program that builds fluent Quran recitation, essential Islamic knowledge, and daily worship practice for children and new learners.",
+      "introduction": "The Holy Qur'an is the final sacred message from Allah to humanity, revealed as a mercy, guidance, and a light for all mankind. The Prophet (ﷺ) said: 'The best among you are those who learn the Qur'an and teach it.' This program is designed to help learners establish a strong foundation in proper Quranic recitation with tajweed, along with essential Islamic knowledge that guides daily worship and character development. Through structured lessons, daily practice, and caring mentorship, students will develop the skills and habits necessary to connect deeply with the Book of Allah.",
+      "targetAudience": [
+        "Children aged 6-12 who want to begin their Quranic journey",
+        "New learners seeking a strong foundation in tajweed and Islamic knowledge",
+        "Anyone who wishes to enhance recitation accuracy and understanding",
+        "Parents looking for structured Islamic education for their children",
+        "Students who want to establish daily worship habits"
+      ],
       "category": "tajweed",
       "level": "beginner",
       "duration": "2 Years",
@@ -37,6 +45,14 @@
       "id": "quran-memorization",
       "title": "Quran Memorization (3-Year)",
       "description": "An intensive Hifz track focused on memorizing the entire Quran with strong tajweed, revision cycles, and personal mentorship.",
+      "introduction": "The Prophet (ﷺ) said: 'The one who is proficient in the Qur'an is associated with the noble, scribes (angels); and he who recites the Qur'an and finds it difficult to recite, doing his best to recite it in the best way possible, will have a double reward.' (Bukhari & Muslim). In another hadith, the Prophet (ﷺ) stated: 'The Qur'an will meet its companion on the Day of Resurrection when his grave is opened for him, in the form of a pale man. It will ask him, 'Do you know who I am?' He will say, 'I do not know you.' It will say, 'I am your companion the Qur'an, who made you thirsty during the day and kept you awake at night. Every merchant will benefit from his trade, and today you will be enriched.' This intensive Hifz program is designed to guide dedicated students through the sacred journey of memorizing Allah's Book with proper tajweed, consistent revision, and spiritual connection.",
+      "targetAudience": [
+        "Students with basic tajweed knowledge ready to commit to Hifz",
+        "Anyone who wishes to preserve the Qur'an in their heart",
+        "Dedicated learners who can commit to daily memorization routines",
+        "Students aged 10 and above with strong reading ability",
+        "Individuals seeking Allah's pleasure through Hifz"
+      ],
       "category": "hifz",
       "level": "intermediate",
       "duration": "3 Years",
@@ -69,6 +85,14 @@
       "id": "ibadur-rahman",
       "title": "Ibadur Rahman (2-Year)",
       "description": "A two-year boys' scholarship track focused on Arabic, Quran translation, and Islamic leadership skills for young learners.",
+      "introduction": "The Prophet (ﷺ) said: 'A man is the guardian of his family and is responsible for them. A woman is the guardian of her husband's house and is responsible for it.' (Bukhari & Muslim). This hadith highlights the sacred responsibility men hold in leading and protecting their families. The Ibadur Rahman program is designed to shape young men into knowledgeable, God-conscious leaders who understand their roles in family, community, and society. Through comprehensive study of Arabic, Quranic sciences, Fiqh, Hadith, and practical leadership training, students will develop the intellectual foundation and moral character necessary to serve as true 'servants of the Most Merciful' - individuals who embody Islamic values in their personal lives and become positive influences in their communities.",
+      "targetAudience": [
+        "Boys aged 13-18 seeking comprehensive Islamic education",
+        "Men who can dedicate two hours a day to learning and revision",
+        "Students aspiring to become community leaders and scholars",
+        "Young men wanting to understand Arabic and Quranic sciences",
+        "Individuals preparing for future roles in family and community service"
+      ],
       "category": "ibadur-rahman",
       "level": "intermediate",
       "duration": "2 Years (4 Semesters)",
@@ -106,6 +130,14 @@
       "id": "momina-program",
       "title": "Momina Program (2-Year)",
       "description": "A holistic two-year program for women covering Quran recitation, essential fiqh, family life, and spiritual development.",
+      "introduction": "The Prophet (ﷺ) said: 'Seeking knowledge is obligatory upon every Muslim.' (Ibn Majah) and 'Whoever follows a path in pursuit of knowledge, Allah will make easy for him a path to Paradise.' (Muslim). The wisdom of Aisha (may Allah be pleased with her) exemplifies the heights of scholarship women can achieve. The Momina Program is dedicated to empowering women with authentic Islamic knowledge, practical guidance for family life, and spiritual development. Our female-led program creates a supportive sisterhood environment where women can strengthen their connection with the Qur'an, understand their rights and responsibilities in Islam, and develop the skills to nurture God-conscious families and communities.",
+      "targetAudience": [
+        "Women seeking comprehensive Islamic education from female scholars",
+        "Women who can dedicate two hours a day to learning and revision",
+        "Mothers wanting to raise children with Islamic values",
+        "Young women preparing for marriage and family life",
+        "Professionals and homemakers seeking spiritual growth and knowledge"
+      ],
       "category": "momina",
       "level": "beginner",
       "duration": "2 Years (4 Semesters)",
@@ -143,6 +175,14 @@
       "id": "bachelor-alimiyat",
       "title": "Bachelor of Alimiyat (5-Year)",
       "description": "A comprehensive five-year scholarship program in classical Islamic sciences, designed to train future scholars and teachers.",
+      "introduction": "Every era requires scholars who understand the time they live in, are deeply rooted in Islamic tradition, and can address contemporary challenges with wisdom and knowledge. The Prophet (ﷺ) emphasized the importance of scholars: 'The scholars are the inheritors of the Prophets.' (Tirmidhi) and 'Verily, Allah does not take away knowledge by snatching it from the people, but He takes it away by taking away the scholars.' (Bukhari & Muslim). This rigorous five-year Alimiyat program follows the classical Dars-e-Nizami curriculum, training students in Quranic exegesis, Hadith, Fiqh, Arabic sciences, and Islamic theology. Our graduates emerge as qualified scholars, teachers, and community leaders equipped to serve the Ummah with authentic knowledge, sound understanding, and practical wisdom.",
+      "targetAudience": [
+        "Students aspiring to become Islamic scholars and teachers",
+        "Professionals seeking advanced Islamic education alongside careers",
+        "Homemakers wanting comprehensive knowledge for family and community service",
+        "Individuals preparing for roles in Islamic institutions and academia",
+        "Anyone committed to deep study of Islamic sciences"
+      ],
       "category": "alimiyat",
       "level": "advanced",
       "duration": "5 Years (10 Semesters)",

@@ -1,5 +1,6 @@
 export interface InstituteInfo {
   name: string;
+  subtitle?: string;
   tagline: string;
   description: string;
   founded: number;
@@ -16,6 +17,7 @@ export interface InstituteInfo {
     email: string;
     phones: string[];
     whatsapp?: string;
+    website?: string;
   };
   social: {
     facebook?: string;
@@ -30,12 +32,14 @@ export interface Course {
   id: string;
   title: string;
   description: string;
+  introduction?: string;
   category: CourseCategory;
   level: 'beginner' | 'intermediate' | 'advanced';
   duration: string;
   schedule: string;
   instructor: string;
   maxStudents: number;
+  targetAudience?: string[];
   price?: string;
   image?: string;
   features: string[];

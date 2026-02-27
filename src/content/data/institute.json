@@ -1,5 +1,6 @@
 {
   "name": "Islamic Hubb",
+  "subtitle": "Online Institute for Islamic Studies",
   "tagline": "ISLAMIC HUBB • Empowering Learners Since 2018",
   "description": "Islamic Hubb is a dedicated center for Quranic learning and Islamic sciences, offering structured long-term and short-term programs for children, youth, and adults. Our classes blend traditional scholarship with caring mentorship so every student grows in knowledge, adab, and service.",
   "mission": [
@@ -55,7 +56,8 @@
       "+91 97003-62205",
       "+91 70328-35053"
     ],
-    "whatsapp": "+91 97003-62205"
+    "whatsapp": "+91 97003-62205",
+    "website": "www.islamichubb.com"
   },
   "social": {
     "facebook": "https://facebook.com/islamichubb",
