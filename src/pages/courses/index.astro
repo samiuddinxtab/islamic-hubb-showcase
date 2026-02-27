@@ -1,0 +1,172 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FadeIn from '../../components/animations/FadeIn.astro';
+import coursesData from '../../content/data/courses.json';
+import seoData from '../../content/data/seo.json';
+import { getCourseCategoryLabel, getCourseLevelLabel } from '../../utils/helpers';
+
+const { courses } = coursesData;
+const seo = seoData.pages.courses;
+
+const categories = [...new Set(courses.map(c => c.category))];
+const levels = [...new Set(courses.map(c => c.level))];
+
+const categoryColors: Record<string, string> = {
+  quran: 'bg-emerald-100 text-emerald-800',
+  arabic: 'bg-amber-100 text-amber-800',
+  fiqh: 'bg-blue-100 text-blue-800',
+  aqeedah: 'bg-purple-100 text-purple-800',
+  hadith: 'bg-rose-100 text-rose-800',
+  seerah: 'bg-teal-100 text-teal-800',
+  tajweed: 'bg-cyan-100 text-cyan-800',
+  'islamic-history': 'bg-indigo-100 text-indigo-800',
+};
+---
+
+<Layout seo={seo}>
+  <!-- Hero -->
+  <section class="relative py-24 bg-gradient-to-br from-emerald-900 via-teal-900 to-emerald-800">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </div>
+    <div class="container-custom relative z-10">
+      <FadeIn class="text-center max-w-3xl mx-auto">
+        <span class="badge bg-white/20 text-white mb-4">Courses</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          Our Courses
+        </h1>
+        <p class="text-xl text-emerald-100">
+          Explore our comprehensive range of Islamic courses designed for all levels of knowledge.
+        </p>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="py-8 bg-white border-b">
+    <div class="container-custom">
+      <div class="flex flex-wrap gap-4 items-center justify-center">
+        <span class="text-gray-600 font-medium">Filter by Category:</span>
+        <div class="flex flex-wrap gap-2">
+          <button class="filter-btn active px-4 py-2 rounded-full text-sm font-medium bg-emerald-600 text-white transition-colors" data-filter="all">
+            All
+          </button>
+          {categories.map((cat) => (
+            <button 
+              class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-emerald-100 hover:text-emerald-700 transition-colors" 
+              data-filter={cat}
+            >
+              {getCourseCategoryLabel(cat)}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Grid -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-custom">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="coursesGrid">
+        {courses.map((course, index) => (
+          <FadeIn delay={index * 0.05} class="course-card" data-category={course.category}>
+            <article class="h-full bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-emerald-200">
+              <!-- Header -->
+              <div class="relative h-48 bg-gradient-to-br from-emerald-500 to-teal-600 overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="text-center text-white/90">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-2 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="absolute top-4 left-4">
+                  <span class={`badge ${categoryColors[course.category] || 'bg-gray-100 text-gray-800'}`}>
+                    {getCourseCategoryLabel(course.category)}
+                  </span>
+                </div>
+                <div class="absolute top-4 right-4">
+                  <span class="badge bg-white/90 text-gray-800">
+                    {getCourseLevelLabel(course.level)}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-2 hover:text-emerald-600 transition-colors">
+                  {course.title}
+                </h3>
+                <p class="text-gray-600 text-sm mb-4 line-clamp-2">{course.description}</p>
+
+                <div class="flex flex-wrap gap-4 text-sm text-gray-500 mb-4">
+                  <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    {course.duration}
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    {course.maxStudents} students
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                  <div class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-white font-semibold">
+                    {course.instructor.split(' ').map(n => n[0]).join('').slice(0, 2)}
+                  </div>
+                  <div>
+                    <p class="text-sm font-medium text-gray-900">{course.instructor}</p>
+                    <p class="text-xs text-gray-500">Instructor</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action -->
+              <div class="px-6 pb-6">
+                <a 
+                  href={`/courses/${course.id}`}
+                  class="block w-full text-center py-3 rounded-lg border-2 border-emerald-600 text-emerald-600 font-medium hover:bg-emerald-600 hover:text-white transition-all duration-300"
+                >
+                  View Details
+                </a>
+              </div>
+            </article>
+          </FadeIn>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const courseCards = document.querySelectorAll('.course-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+
+        // Update active button
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-emerald-600', 'text-white');
+          b.classList.add('bg-gray-100', 'text-gray-700');
+        });
+        btn.classList.remove('bg-gray-100', 'text-gray-700');
+        btn.classList.add('bg-emerald-600', 'text-white');
+
+        // Filter courses
+        courseCards.forEach(card => {
+          const category = card.dataset.category;
+          if (filter === 'all' || category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  </script>
+</Layout>

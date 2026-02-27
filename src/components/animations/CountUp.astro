@@ -1,0 +1,74 @@
+---
+interface Props {
+  end: number;
+  suffix?: string;
+  prefix?: string;
+  duration?: number;
+  class?: string;
+}
+
+const { end, suffix = '', prefix = '', duration = 2, class: className = '' } = Astro.props;
+---
+
+<span class:list={['count-up', className]} data-end={end} data-duration={duration}>
+  {prefix}0{suffix}
+</span>
+
+<script>
+  const countElements = document.querySelectorAll('.count-up');
+  
+  const formatNumber = (num: number): string => {
+    if (num >= 1000000) {
+      return (num / 1000000).toFixed(1) + 'M';
+    }
+    if (num >= 1000) {
+      return (num / 1000).toFixed(1) + 'K';
+    }
+    return Math.floor(num).toString();
+  };
+  
+  const animateCount = (el: HTMLElement) => {
+    const end = parseInt(el.dataset.end || '0');
+    const duration = parseFloat(el.dataset.duration || '2') * 1000;
+    const text = el.textContent || '';
+    const prefix = text.match(/^[^\d]*/)?.[0] || '';
+    const suffix = text.match(/[^\d]*$/)?.[0] || '';
+    
+    const startTime = performance.now();
+    
+    const updateCount = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      // Easing function for smooth animation
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      const current = Math.floor(easeOutQuart * end);
+      
+      el.textContent = prefix + formatNumber(current) + suffix;
+      
+      if (progress < 1) {
+        requestAnimationFrame(updateCount);
+      } else {
+        el.textContent = prefix + formatNumber(end) + suffix;
+      }
+    };
+    
+    requestAnimationFrame(updateCount);
+  };
+  
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target as HTMLElement);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.5,
+    }
+  );
+  
+  countElements.forEach((el) => observer.observe(el));
+</script>

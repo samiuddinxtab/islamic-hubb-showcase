@@ -1,0 +1,109 @@
+---
+import eventsData from '../../content/data/events.json';
+import FadeIn from '../animations/FadeIn.astro';
+import { formatDate, getEventTypeLabel } from '../../utils/helpers';
+
+const { events } = eventsData;
+const upcomingEvents = events
+  .filter(e => new Date(e.date) > new Date())
+  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+  .slice(0, 3);
+
+const typeColors: Record<string, string> = {
+  seminar: 'bg-blue-100 text-blue-800',
+  workshop: 'bg-amber-100 text-amber-800',
+  conference: 'bg-purple-100 text-purple-800',
+  webinar: 'bg-emerald-100 text-emerald-800',
+  community: 'bg-rose-100 text-rose-800',
+};
+---
+
+<section class="section-padding bg-white">
+  <div class="container-custom">
+    <FadeIn class="text-center max-w-3xl mx-auto mb-16">
+      <span class="badge badge-primary mb-4">Upcoming Events</span>
+      <h2 class="section-title">Join Our Community Events</h2>
+      <p class="section-subtitle">
+        Attend our seminars, workshops, and conferences to deepen your knowledge and connect with fellow seekers.
+      </p>
+    </FadeIn>
+
+    {upcomingEvents.length > 0 ? (
+      <div class="grid md:grid-cols-3 gap-8">
+        {upcomingEvents.map((event, index) => {
+          const eventDate = new Date(event.date);
+          const day = eventDate.getDate();
+          const month = eventDate.toLocaleString('en-US', { month: 'short' });
+          
+          return (
+            <FadeIn delay={index * 0.1} class="group">
+              <div class="h-full bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 border border-gray-100 hover:border-emerald-200">
+                <div class="flex">
+                  <!-- Date Badge -->
+                  <div class="w-24 bg-gradient-to-br from-emerald-500 to-teal-600 flex flex-col items-center justify-center text-white p-4">
+                    <span class="text-3xl font-bold">{day}</span>
+                    <span class="text-sm uppercase">{month}</span>
+                  </div>
+                  
+                  <!-- Content -->
+                  <div class="flex-1 p-6">
+                    <span class={`badge ${typeColors[event.type] || 'bg-gray-100 text-gray-800'} mb-3`}>
+                      {getEventTypeLabel(event.type)}
+                    </span>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">
+                      {event.title}
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-2">{event.description}</p>
+                    
+                    <div class="space-y-2 text-sm text-gray-500">
+                      <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        {event.time}
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        {event.location}
+                      </div>
+                    </div>
+
+                    {event.registrationRequired && (
+                      <div class="mt-4 pt-4 border-t border-gray-100">
+                        <a 
+                          href={`/events/${event.id}`}
+                          class="inline-flex items-center gap-2 text-emerald-600 font-medium hover:text-emerald-700 transition-colors"
+                        >
+                          Register Now
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+          );
+        })}
+      </div>
+    ) : (
+      <div class="text-center py-12">
+        <p class="text-gray-500">Check back soon for upcoming events!</p>
+      </div>
+    )}
+
+    <FadeIn delay={0.4} class="text-center mt-12">
+      <a href="/events" class="btn-outline">
+        View All Events
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </FadeIn>
+  </div>
+</section>

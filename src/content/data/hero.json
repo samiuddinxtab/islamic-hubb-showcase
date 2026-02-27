@@ -1,0 +1,96 @@
+{
+  "slides": [
+    {
+      "id": "slide-1",
+      "title": "Begin Your Journey of Knowledge",
+      "subtitle": "Authentic Islamic Education",
+      "description": "Join thousands of students worldwide in seeking beneficial knowledge rooted in the Quran and authentic Sunnah.",
+      "cta": {
+        "primary": {
+          "label": "Explore Courses",
+          "href": "/courses"
+        },
+        "secondary": {
+          "label": "Learn More",
+          "href": "/about"
+        }
+      }
+    },
+    {
+      "id": "slide-2",
+      "title": "Memorize the Book of Allah",
+      "subtitle": "Quran Hifz Program",
+      "description": "Structured memorization program with qualified teachers who hold Ijazah in the Quran. Individual attention for every student.",
+      "cta": {
+        "primary": {
+          "label": "Start Hifz Journey",
+          "href": "/courses/quran-memorization"
+        },
+        "secondary": {
+          "label": "Meet Teachers",
+          "href": "/instructors"
+        }
+      }
+    },
+    {
+      "id": "slide-3",
+      "title": "Learn the Language of the Quran",
+      "subtitle": "Arabic Language Program",
+      "description": "Master classical Arabic to understand the Quran in its original language. From beginner to advanced levels.",
+      "cta": {
+        "primary": {
+          "label": "Enroll Now",
+          "href": "/courses/arabic-intensive"
+        },
+        "secondary": {
+          "label": "Free Assessment",
+          "href": "/contact"
+        }
+      }
+    }
+  ],
+  "statistics": [
+    {
+      "value": "5000+",
+      "label": "Students Enrolled",
+      "icon": "users"
+    },
+    {
+      "value": "50+",
+      "label": "Expert Instructors",
+      "icon": "graduation-cap"
+    },
+    {
+      "value": "100+",
+      "label": "Courses Offered",
+      "icon": "book-open"
+    },
+    {
+      "value": "98%",
+      "label": "Student Satisfaction",
+      "icon": "heart"
+    }
+  ],
+  "features": [
+    {
+      "icon": "book",
+      "title": "Authentic Curriculum",
+      "description": "All courses based on authentic sources: the Quran and verified Sunnah"
+    },
+    {
+      "icon": "users",
+      "title": "Expert Instructors",
+      "description": "Learn from qualified scholars with decades of teaching experience"
+    },
+    {
+      "icon": "globe",
+      "title": "Global Community",
+      "description": "Join students from over 50 countries in our learning community"
+    },
+    {
+      "icon": "award",
+      "title": "Recognized Certificates",
+      "description": "Earn certificates and Ijazat recognized worldwide"
+    }
+  ]
+}

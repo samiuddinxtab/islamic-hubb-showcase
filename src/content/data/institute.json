@@ -1,0 +1,52 @@
+{
+  "name": "Islamic Hubb Institute",
+  "tagline": "Illuminating Hearts Through Authentic Islamic Education",
+  "description": "Islamic Hubb Institute is a premier institution dedicated to providing authentic Islamic education rooted in the Quran and Sunnah. We offer comprehensive programs in Quranic studies, Arabic language, Islamic jurisprudence, and spiritual development.",
+  "mission": "To nurture knowledgeable Muslims who embody the teachings of Islam and contribute positively to society through faith-based education and character development.",
+  "vision": "To be a leading global center for Islamic education that produces scholars and leaders who serve humanity with wisdom and compassion.",
+  "values": [
+    {
+      "title": "Authenticity",
+      "description": "Teaching based on authentic sources: the Quran and authentic Sunnah"
+    },
+    {
+      "title": "Excellence",
+      "description": "Striving for the highest standards in education and character"
+    },
+    {
+      "title": "Accessibility",
+      "description": "Making quality Islamic education available to all seekers of knowledge"
+    },
+    {
+      "title": "Community",
+      "description": "Building a supportive learning community united in faith"
+    }
+  ],
+  "founded": 2015,
+  "location": {
+    "address": "123 Knowledge Street, Islamic District",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "coordinates": {
+      "lat": 25.2048,
+      "lng": 55.2708
+    }
+  },
+  "contact": {
+    "email": "info@islamichubb.org",
+    "phone": "+971 4 123 4567",
+    "whatsapp": "+971 50 123 4567"
+  },
+  "social": {
+    "facebook": "https://facebook.com/islamichubb",
+    "twitter": "https://twitter.com/islamichubb",
+    "instagram": "https://instagram.com/islamichubb",
+    "youtube": "https://youtube.com/islamichubb",
+    "telegram": "https://t.me/islamichubb"
+  },
+  "hours": {
+    "weekdays": "8:00 AM - 8:00 PM",
+    "weekends": "9:00 AM - 5:00 PM",
+    "friday": "Closed for Jumuah"
+  }
+}

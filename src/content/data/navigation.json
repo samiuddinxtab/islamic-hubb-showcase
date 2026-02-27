@@ -1,0 +1,134 @@
+{
+  "mainNav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about",
+      "children": [
+        {
+          "label": "Our Story",
+          "href": "/about"
+        },
+        {
+          "label": "Mission & Vision",
+          "href": "/about#mission"
+        },
+        {
+          "label": "Our Team",
+          "href": "/instructors"
+        }
+      ]
+    },
+    {
+      "label": "Programs",
+      "href": "/programs",
+      "children": [
+        {
+          "label": "All Programs",
+          "href": "/programs"
+        },
+        {
+          "label": "Foundations of Islam",
+          "href": "/programs/foundations-islam"
+        },
+        {
+          "label": "Scholar Track",
+          "href": "/programs/scholar-track"
+        },
+        {
+          "label": "Quran Specialist",
+          "href": "/programs/quran-specialist"
+        }
+      ]
+    },
+    {
+      "label": "Courses",
+      "href": "/courses",
+      "children": [
+        {
+          "label": "All Courses",
+          "href": "/courses"
+        },
+        {
+          "label": "Quran Studies",
+          "href": "/courses?q=quran"
+        },
+        {
+          "label": "Arabic Language",
+          "href": "/courses?q=arabic"
+        },
+        {
+          "label": "Islamic Sciences",
+          "href": "/courses?q=fiqh"
+        }
+      ]
+    },
+    {
+      "label": "Events",
+      "href": "/events"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "footerNav": {
+    "courses": [
+      {
+        "label": "Quran Memorization",
+        "href": "/courses/quran-memorization"
+      },
+      {
+        "label": "Arabic Language",
+        "href": "/courses/arabic-intensive"
+      },
+      {
+        "label": "Fiqh Studies",
+        "href": "/courses/fiqh-essentials"
+      },
+      {
+        "label": "All Courses",
+        "href": "/courses"
+      }
+    ],
+    "about": [
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "Our Instructors",
+        "href": "/instructors"
+      },
+      {
+        "label": "Testimonials",
+        "href": "/testimonials"
+      },
+      {
+        "label": "Careers",
+        "href": "/careers"
+      }
+    ],
+    "support": [
+      {
+        "label": "Help Center",
+        "href": "/faq"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Terms of Service",
+        "href": "/terms"
+      }
+    ]
+  }
+}

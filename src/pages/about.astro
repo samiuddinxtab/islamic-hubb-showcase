@@ -1,0 +1,134 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FadeIn from '../components/animations/FadeIn.astro';
+import institute from '../content/data/institute.json';
+import seoData from '../content/data/seo.json';
+
+const seo = seoData.pages.about;
+---
+
+<Layout seo={seo}>
+  <!-- Hero Section -->
+  <section class="relative py-24 bg-gradient-to-br from-emerald-900 via-teal-900 to-emerald-800">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </div>
+    <div class="container-custom relative z-10">
+      <FadeIn class="text-center max-w-3xl mx-auto">
+        <span class="badge bg-white/20 text-white mb-4">About Us</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          Our Story
+        </h1>
+        <p class="text-xl text-emerald-100">
+          {institute.tagline}
+        </p>
+      </FadeIn>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="section-padding bg-white" id="mission">
+    <div class="container-custom">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+        <FadeIn>
+          <div class="relative">
+            <div class="absolute -top-4 -left-4 w-20 h-20 bg-emerald-100 rounded-full opacity-50"></div>
+            <div class="relative bg-gray-50 rounded-2xl p-8 lg:p-10">
+              <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
+              <p class="text-gray-600 leading-relaxed text-lg">{institute.mission}</p>
+            </div>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.2}>
+          <div class="relative">
+            <div class="absolute -bottom-4 -right-4 w-20 h-20 bg-amber-100 rounded-full opacity-50"></div>
+            <div class="relative bg-gray-50 rounded-2xl p-8 lg:p-10">
+              <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h2>
+              <p class="text-gray-600 leading-relaxed text-lg">{institute.vision}</p>
+            </div>
+          </div>
+        </FadeIn>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-custom">
+      <FadeIn class="text-center max-w-3xl mx-auto mb-16">
+        <span class="badge badge-primary mb-4">Our Values</span>
+        <h2 class="section-title">What We Stand For</h2>
+        <p class="section-subtitle">
+          Our core values guide everything we do, from curriculum design to student interactions.
+        </p>
+      </FadeIn>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {institute.values.map((value, index) => (
+          <FadeIn delay={index * 0.1}>
+            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow h-full">
+              <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center mb-4">
+                <span class="text-2xl font-bold text-emerald-600">{index + 1}</span>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">{value.title}</h3>
+              <p class="text-gray-600">{value.description}</p>
+            </div>
+          </FadeIn>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- History Timeline -->
+  <section class="section-padding bg-white">
+    <div class="container-custom">
+      <FadeIn class="text-center max-w-3xl mx-auto mb-16">
+        <span class="badge badge-secondary mb-4">Our Journey</span>
+        <h2 class="section-title">A Legacy of Learning</h2>
+        <p class="section-subtitle">
+          From our humble beginnings to becoming a leading Islamic education institute.
+        </p>
+      </FadeIn>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="relative">
+          <!-- Timeline Line -->
+          <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-emerald-200 md:-translate-x-1/2"></div>
+          
+          <!-- Timeline Items -->
+          {[
+            { year: 2015, title: 'Foundation', desc: 'Islamic Hubb Institute was established with a vision to provide authentic Islamic education.' },
+            { year: 2017, title: 'Expansion', desc: 'Launched online courses to reach students globally, with students from 20+ countries.' },
+            { year: 2019, title: 'Accreditation', desc: 'Received recognition and accreditation from leading Islamic educational bodies.' },
+            { year: 2021, title: 'Digital Transformation', desc: 'Introduced advanced learning management system and mobile app.' },
+            { year: 2023, title: 'Global Reach', desc: 'Surpassed 5,000 students from over 50 countries worldwide.' },
+          ].map((item, index) => (
+            <FadeIn delay={index * 0.1}>
+              <div class={`relative flex items-start gap-8 mb-12 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                <div class="hidden md:block w-1/2"></div>
+                <div class="absolute left-4 md:left-1/2 w-8 h-8 bg-emerald-500 rounded-full border-4 border-white shadow-md md:-translate-x-1/2 z-10"></div>
+                <div class="ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}">
+                  <span class="text-emerald-600 font-bold text-lg">{item.year}</span>
+                  <h3 class="text-xl font-bold text-gray-900 mt-1">{item.title}</h3>
+                  <p class="text-gray-600 mt-2">{item.desc}</p>
+                </div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
