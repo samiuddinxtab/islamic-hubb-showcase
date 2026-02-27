@@ -1,50 +1,50 @@
 {
   "default": {
-    "title": "Islamic Hubb Institute | Authentic Islamic Education",
-    "description": "Premier Islamic education institute offering Quran studies, Arabic language, Fiqh, and Islamic sciences. Join thousands of students worldwide seeking authentic knowledge.",
+    "title": "Islamic Hubb | Quran & Islamic Studies",
+    "description": "Islamic Hubb offers Quran memorization, tajweed, Alimiyat, and deeniyat programs in Hyderabad. Empowering students with authentic Islamic education.",
     "keywords": [
+      "Islamic Hubb",
+      "Quran classes Hyderabad",
       "Islamic education",
-      "Quran classes",
-      "Arabic language",
-      "Islamic institute",
-      "online Islamic courses",
-      "Quran memorization",
-      "Islamic studies"
+      "Hifz program",
+      "Alimiyat course",
+      "Tajweed",
+      "Deeniyat"
     ],
     "ogImage": "/images/og-default.jpg"
   },
   "pages": {
     "home": {
-      "title": "Islamic Hubb Institute | Authentic Islamic Education",
-      "description": "Begin your journey of Islamic knowledge with qualified scholars. Quran memorization, Arabic language, Fiqh, and more. Join our global learning community."
+      "title": "Islamic Hubb | Quranic Education Hub",
+      "description": "Discover Islamic Hubb's long-term and short-term Quranic programs designed to nurture faith, knowledge, and character."
     },
     "about": {
-      "title": "About Us | Islamic Hubb Institute",
-      "description": "Learn about Islamic Hubb Institute's mission to provide authentic Islamic education. Founded in 2015, we've served over 5,000 students worldwide."
+      "title": "About Islamic Hubb",
+      "description": "Learn about Islamic Hubb's mission, vision, values, and leadership team dedicated to Quranic education."
     },
     "courses": {
-      "title": "Courses | Islamic Hubb Institute",
-      "description": "Explore our comprehensive Islamic courses: Quran memorization, Arabic language, Fiqh, Aqeedah, Hadith, and more. Suitable for all levels."
+      "title": "Long-term Courses | Islamic Hubb",
+      "description": "Explore our 2- to 5-year Quranic and Islamic studies programs including Tajweed, Hifz, Momina, and Alimiyat."
     },
     "programs": {
-      "title": "Programs | Islamic Hubb Institute",
-      "description": "Structured learning programs from Foundations of Islam to Scholar Track. Choose the path that fits your goals and schedule."
+      "title": "Short-term Courses | Islamic Hubb",
+      "description": "Short-term courses in Pre Alimiyat, Tasheeh & Teaching, and Asasi Deeniyat for focused skill building."
     },
     "instructors": {
-      "title": "Our Instructors | Islamic Hubb Institute",
-      "description": "Learn from qualified scholars with decades of experience. Our instructors hold degrees from prestigious Islamic universities worldwide."
+      "title": "Leadership Team | Islamic Hubb",
+      "description": "Meet the scholars and administrators guiding Islamic Hubb's Quranic and Islamic studies programs."
     },
     "events": {
-      "title": "Events | Islamic Hubb Institute",
-      "description": "Join our seminars, workshops, and conferences. Learn, connect, and grow with the Islamic Hubb community."
+      "title": "Events | Islamic Hubb",
+      "description": "Join Islamic Hubb workshops, Quran gatherings, and community events in Hyderabad and online."
     },
     "contact": {
-      "title": "Contact Us | Islamic Hubb Institute",
-      "description": "Get in touch with Islamic Hubb Institute. Visit our campus in Dubai or reach us online. We're here to help you start your learning journey."
+      "title": "Contact Islamic Hubb",
+      "description": "Reach Islamic Hubb in Hyderabad for admissions, course information, and community support."
     },
     "faq": {
-      "title": "FAQ | Islamic Hubb Institute",
-      "description": "Find answers to frequently asked questions about admissions, courses, fees, and more at Islamic Hubb Institute."
+      "title": "FAQ | Islamic Hubb",
+      "description": "Find answers about admissions, course schedules, fees, and support at Islamic Hubb."
     }
   }
 }

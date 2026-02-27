@@ -1,5 +1,6 @@
 ---
 import type { SeoMeta } from '../types';
+import institute from '../content/data/institute.json';
 
 interface Props extends SeoMeta {
   type?: 'website' | 'article';
@@ -22,11 +23,13 @@ const {
   article,
 } = Astro.props;
 
-const siteName = 'Islamic Hubb Institute';
-const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
+const siteName = institute.name;
+const fullTitle = title?.includes(siteName) ? title : `${title} | ${siteName}`;
 const siteUrl = 'https://islamichubb.org';
 const fullCanonical = canonical ? (canonical.startsWith('http') ? canonical : `${siteUrl}${canonical}`) : Astro.url.href;
 const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+const socialLinks = Object.values(institute.social || {}).filter(Boolean);
+const primaryPhone = institute.contact.phones[0];
 ---
 
 <!-- Primary Meta Tags -->
@@ -83,27 +86,22 @@ const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}
 <!-- Structured Data -->
 <script type="application/ld+json" set:html={JSON.stringify({
   "@context": "https://schema.org",
-  "@type": type === 'article' ? 'EducationalOrganization' : 'Organization',
+  "@type": 'EducationalOrganization',
   name: siteName,
   description: description,
   url: siteUrl,
   logo: `${siteUrl}/logo.png`,
-  sameAs: [
-    'https://facebook.com/islamichubb',
-    'https://twitter.com/islamichubb',
-    'https://instagram.com/islamichubb',
-    'https://youtube.com/islamichubb',
-  ],
+  sameAs: socialLinks,
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+971-4-123-4567',
+    telephone: primaryPhone,
     contactType: 'customer service',
-    email: 'info@islamichubb.org',
+    email: institute.contact.email,
   },
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '123 Knowledge Street, Islamic District',
-    addressLocality: 'Dubai',
-    addressCountry: 'United Arab Emirates',
+    streetAddress: institute.location.address,
+    addressLocality: institute.location.city,
+    addressCountry: institute.location.country,
   },
 })} />

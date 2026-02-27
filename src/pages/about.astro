@@ -2,9 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import FadeIn from '../components/animations/FadeIn.astro';
 import institute from '../content/data/institute.json';
+import instructorsData from '../content/data/instructors.json';
 import seoData from '../content/data/seo.json';
 
 const seo = seoData.pages.about;
+const { instructors } = instructorsData;
 ---
 
 <Layout seo={seo}>
@@ -91,43 +93,38 @@ const seo = seoData.pages.about;
     </div>
   </section>
 
-  <!-- History Timeline -->
-  <section class="section-padding bg-white">
+  <!-- Leadership Team -->
+  <section class="section-padding bg-white" id="leadership">
     <div class="container-custom">
       <FadeIn class="text-center max-w-3xl mx-auto mb-16">
-        <span class="badge badge-secondary mb-4">Our Journey</span>
-        <h2 class="section-title">A Legacy of Learning</h2>
+        <span class="badge badge-secondary mb-4">Leadership Team</span>
+        <h2 class="section-title">Guided by Experienced Scholars</h2>
         <p class="section-subtitle">
-          From our humble beginnings to becoming a leading Islamic education institute.
+          Our leadership team combines scholarship, mentorship, and community service to keep
+          Islamic Hubb focused on authentic learning.
         </p>
       </FadeIn>
 
-      <div class="max-w-4xl mx-auto">
-        <div class="relative">
-          <!-- Timeline Line -->
-          <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-emerald-200 md:-translate-x-1/2"></div>
-          
-          <!-- Timeline Items -->
-          {[
-            { year: 2015, title: 'Foundation', desc: 'Islamic Hubb Institute was established with a vision to provide authentic Islamic education.' },
-            { year: 2017, title: 'Expansion', desc: 'Launched online courses to reach students globally, with students from 20+ countries.' },
-            { year: 2019, title: 'Accreditation', desc: 'Received recognition and accreditation from leading Islamic educational bodies.' },
-            { year: 2021, title: 'Digital Transformation', desc: 'Introduced advanced learning management system and mobile app.' },
-            { year: 2023, title: 'Global Reach', desc: 'Surpassed 5,000 students from over 50 countries worldwide.' },
-          ].map((item, index) => (
-            <FadeIn delay={index * 0.1}>
-              <div class={`relative flex items-start gap-8 mb-12 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                <div class="hidden md:block w-1/2"></div>
-                <div class="absolute left-4 md:left-1/2 w-8 h-8 bg-emerald-500 rounded-full border-4 border-white shadow-md md:-translate-x-1/2 z-10"></div>
-                <div class="ml-12 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}">
-                  <span class="text-emerald-600 font-bold text-lg">{item.year}</span>
-                  <h3 class="text-xl font-bold text-gray-900 mt-1">{item.title}</h3>
-                  <p class="text-gray-600 mt-2">{item.desc}</p>
-                </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {instructors.map((leader, index) => (
+          <FadeIn delay={index * 0.1}>
+            <div class="h-full bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+              <div class="w-16 h-16 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center text-xl font-bold mb-4">
+                {leader.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
               </div>
-            </FadeIn>
-          ))}
-        </div>
+              <h3 class="text-lg font-bold text-gray-900">{leader.name}</h3>
+              <p class="text-sm text-emerald-600 font-medium mb-3">{leader.title}</p>
+              <p class="text-gray-600 text-sm mb-4">{leader.bio}</p>
+              <div class="flex flex-wrap gap-2">
+                {leader.specializations.slice(0, 3).map((spec) => (
+                  <span class="text-xs px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full">
+                    {spec}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
+        ))}
       </div>
     </div>
   </section>

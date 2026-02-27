@@ -1,64 +1,44 @@
 {
   "faq": [
     {
-      "question": "How do I enroll in a course?",
-      "answer": "You can enroll online through our website by selecting your desired course and completing the registration form. Alternatively, you can visit our campus during office hours to register in person. A placement test may be required for some advanced courses.",
+      "question": "How do I apply for a long-term course?",
+      "answer": "Visit the Long-term Courses page and contact our admissions team. We will schedule an assessment and guide you through the enrollment process.",
       "category": "admissions"
     },
     {
-      "question": "What are the prerequisites for the courses?",
-      "answer": "Prerequisites vary by course level. Beginner courses require no prior knowledge. Intermediate courses typically require completion of related beginner courses or passing a placement assessment. Advanced courses require instructor approval and demonstrated proficiency.",
+      "question": "What are the class timings?",
+      "answer": "Class timings vary by course. Long-term programs run in morning and evening sessions, while short-term courses are scheduled on weekends or evenings. Check each course page for details.",
       "category": "courses"
     },
     {
-      "question": "Are online classes available?",
-      "answer": "Yes! Most of our courses offer both in-person and live online options. Online students participate in real-time classes via Zoom and have access to all course materials through our learning management system. Recordings are also available for review.",
-      "category": "courses"
-    },
-    {
-      "question": "What is the fee structure?",
-      "answer": "Course fees vary based on duration and level. We offer flexible payment plans and sibling discounts. Financial assistance is available for those who qualify. Contact our admissions office for detailed fee information and payment options.",
-      "category": "financial"
-    },
-    {
-      "question": "Do you offer certificates upon completion?",
-      "answer": "Yes, all students who successfully complete a course receive a certificate of completion. Advanced programs may also offer Ijazah (traditional authorization) for qualified students who meet the rigorous standards of mastery.",
-      "category": "courses"
-    },
-    {
-      "question": "Are there classes for women?",
-      "answer": "Absolutely! We have dedicated female instructors and separate classes for women. Many of our courses also have mixed online sessions with appropriate Islamic etiquettes maintained. We strive to make Islamic education accessible to everyone.",
+      "question": "Do you provide separate classes for sisters?",
+      "answer": "Yes. The Momina program and women's workshops are conducted by female instructors with dedicated classrooms.",
       "category": "general"
     },
     {
-      "question": "What if I miss a class?",
-      "answer": "All classes are recorded and available to enrolled students within 24 hours. You can catch up on missed content at your convenience. For extended absences, please inform your instructor to arrange a makeup plan.",
-      "category": "courses"
-    },
-    {
-      "question": "Is there an age limit for enrollment?",
-      "answer": "We welcome students of all ages! We have special youth programs for teenagers and courses tailored for adults. Children under 13 may require parental supervision for online classes. There's no upper age limit - it's never too late to seek knowledge.",
+      "question": "Is there a placement assessment?",
+      "answer": "Yes, students may take a short assessment in Quran recitation and basic Islamic knowledge to ensure the right placement.",
       "category": "admissions"
     },
     {
-      "question": "Do you provide study materials?",
-      "answer": "Yes, all course fees include comprehensive study materials, textbooks, and access to our digital library. Additional recommended reading lists are provided for those who wish to deepen their studies further.",
+      "question": "Are certificates provided after completion?",
+      "answer": "Students receive certificates for both long-term and short-term courses. Advanced students may pursue ijazah pathways under faculty supervision.",
       "category": "courses"
     },
     {
-      "question": "Can I get a refund if I need to withdraw?",
-      "answer": "Full refunds are available within the first week of classes. After that, prorated refunds may be granted based on attendance and circumstances. Please see our refund policy or contact administration for specific cases.",
+      "question": "Can working professionals join short-term courses?",
+      "answer": "Absolutely. Short-term courses are designed for working adults and families with flexible schedules.",
+      "category": "general"
+    },
+    {
+      "question": "Do you offer scholarships or fee support?",
+      "answer": "Limited fee concessions are available based on need. Please speak with the admissions office for eligibility details.",
       "category": "financial"
     },
     {
-      "question": "How are instructors selected?",
-      "answer": "All our instructors are qualified scholars and educators with recognized credentials in their fields. They undergo a rigorous selection process including credential verification, teaching demonstration, and background checks. Many hold advanced degrees from prestigious Islamic universities.",
-      "category": "general"
-    },
-    {
-      "question": "Do you offer corporate or group training?",
-      "answer": "Yes, we offer customized Islamic education programs for organizations, schools, and community groups. These can be conducted at our facility or at your location. Contact us to discuss your specific needs and arrangements.",
-      "category": "general"
+      "question": "How can parents support Hifz students?",
+      "answer": "Parents are encouraged to supervise daily revision, maintain the progress log, and attend monthly feedback meetings with instructors.",
+      "category": "courses"
     }
   ]
 }

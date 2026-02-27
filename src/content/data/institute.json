@@ -1,52 +1,53 @@
 {
-  "name": "Islamic Hubb Institute",
-  "tagline": "Illuminating Hearts Through Authentic Islamic Education",
-  "description": "Islamic Hubb Institute is a premier institution dedicated to providing authentic Islamic education rooted in the Quran and Sunnah. We offer comprehensive programs in Quranic studies, Arabic language, Islamic jurisprudence, and spiritual development.",
-  "mission": "To nurture knowledgeable Muslims who embody the teachings of Islam and contribute positively to society through faith-based education and character development.",
-  "vision": "To be a leading global center for Islamic education that produces scholars and leaders who serve humanity with wisdom and compassion.",
+  "name": "Islamic Hubb",
+  "tagline": "ISLAMIC HUBB • Nurturing Quranic Hearts",
+  "description": "Islamic Hubb is a dedicated center for Quranic learning and Islamic sciences, offering structured long-term and short-term programs for children, youth, and adults. Our classes blend traditional scholarship with caring mentorship so every student grows in knowledge, adab, and service.",
+  "mission": "To cultivate a generation rooted in the Quran and Sunnah by providing authentic, accessible, and nurturing Islamic education that transforms lives and communities.",
+  "vision": "To be a trusted hub for Islamic learning in India that raises confident scholars, compassionate leaders, and God-conscious families.",
   "values": [
     {
-      "title": "Authenticity",
-      "description": "Teaching based on authentic sources: the Quran and authentic Sunnah"
+      "title": "Quran-Centered Learning",
+      "description": "Every program strengthens recitation, understanding, and love of the Quran."
     },
     {
-      "title": "Excellence",
-      "description": "Striving for the highest standards in education and character"
+      "title": "Tarbiya & Character",
+      "description": "We emphasize adab, discipline, and spiritual growth alongside academics."
     },
     {
-      "title": "Accessibility",
-      "description": "Making quality Islamic education available to all seekers of knowledge"
+      "title": "Community Service",
+      "description": "Students are guided to serve their families and neighborhoods with ihsan."
     },
     {
-      "title": "Community",
-      "description": "Building a supportive learning community united in faith"
+      "title": "Inclusive Mentorship",
+      "description": "Dedicated faculty support learners of all ages through personalized guidance."
     }
   ],
-  "founded": 2015,
+  "founded": 2009,
   "location": {
-    "address": "123 Knowledge Street, Islamic District",
-    "city": "Dubai",
-    "country": "United Arab Emirates",
+    "address": "Masjid Lane, Old City",
+    "city": "Hyderabad, Telangana",
+    "country": "India",
     "coordinates": {
-      "lat": 25.2048,
-      "lng": 55.2708
+      "lat": 17.3606,
+      "lng": 78.4747
     }
   },
   "contact": {
-    "email": "info@islamichubb.org",
-    "phone": "+971 4 123 4567",
-    "whatsapp": "+971 50 123 4567"
+    "email": "islamichubb@gmail.com",
+    "phones": [
+      "+91 97003-62205",
+      "+91 70328-35053"
+    ],
+    "whatsapp": "+91 97003-62205"
   },
   "social": {
     "facebook": "https://facebook.com/islamichubb",
-    "twitter": "https://twitter.com/islamichubb",
     "instagram": "https://instagram.com/islamichubb",
-    "youtube": "https://youtube.com/islamichubb",
-    "telegram": "https://t.me/islamichubb"
+    "youtube": "https://youtube.com/@islamichubb"
   },
   "hours": {
-    "weekdays": "8:00 AM - 8:00 PM",
-    "weekends": "9:00 AM - 5:00 PM",
-    "friday": "Closed for Jumuah"
+    "weekdays": "6:00 AM - 8:00 PM",
+    "weekends": "8:00 AM - 1:00 PM",
+    "friday": "Closed during Jumu'ah"
   }
 }

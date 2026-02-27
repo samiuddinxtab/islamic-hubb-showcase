@@ -15,9 +15,15 @@ const contactInfo = [
   },
   {
     icon: 'phone',
-    title: 'Phone',
-    value: institute.contact.phone,
-    href: `tel:${institute.contact.phone.replace(/\s/g, '')}`,
+    title: 'Admissions Phone',
+    value: institute.contact.phones[0],
+    href: `tel:${institute.contact.phones[0].replace(/\s/g, '')}`,
+  },
+  {
+    icon: 'phone',
+    title: 'Student Support',
+    value: institute.contact.phones[1],
+    href: `tel:${institute.contact.phones[1].replace(/\s/g, '')}`,
   },
   {
     icon: 'location',
