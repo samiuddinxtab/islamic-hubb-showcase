@@ -71,7 +71,7 @@
       "description": "A two-year boys' scholarship track focused on Arabic, Quran translation, and Islamic leadership skills for young learners.",
       "category": "ibadur-rahman",
       "level": "intermediate",
-      "duration": "2 Years",
+      "duration": "2 Years (4 Semesters)",
       "schedule": "Weekdays: 7:30 AM - 10:30 AM",
       "instructor": "Maulana Saifullah Nadwi",
       "maxStudents": 20,
@@ -82,19 +82,24 @@
         "Mentorship for teen leadership"
       ],
       "curriculum": [
-        "Arabic grammar (Nahw) and morphology (Sarf)",
-        "Quran translation essentials",
-        "Seerah and Islamic history",
-        "Fiqh of worship and ethics",
-        "Hadith selections and memorization",
-        "Public speaking and dawah skills"
+        "SEMESTER 1: Noorani Qaida (Tajweed basics - letter recognition and sounds), Urdu Reading & Writing (basic to intermediate), Fiqh Bahishti Zewar (Taharat - purification, wudu, ghusl, najasa), Aqeedah Imaniyat (Introduction to Islamic Beliefs - Tawhid, qualities of believers), Seerat (Introduction to Prophet's Life - Birth to Prophet hood)",
+        "SEMESTER 2: Tajweed (Makharij al-Huruf - articulation points & Sifaat al-Huruf - qualities of letters), Fiqh (Salah - conditions, pillars, wajib, sunnan), Quran Tafsir (Surah Yaseen - Part 1 - verses 1-60), Hadith Ma'ariful Hadith (Knowledge - Importance of seeking knowledge,Etiquettes of learning), Social Ethics (Islamic morals, respect for elders, kindness to peers)",
+        "SEMESTER 3: Tajweed (Idgham - merging, Ikhfa - hiding, Qalqalah - echoing), Fiqh (Fasting - Ramadan rules, sawm types, fidya,kaffarah), Quran Tafsir (Surah Yaseen complete, Surah Rahman - Mercy of Allah), Hadith (Trials - Faith and testing, perseverance in difficulties), Seerat (Prophet's Life - Migration to Madinah, building the Muslim community)",
+        "SEMESTER 4: Tajweed (Advanced rules - Madd, Hamzatul Wasl, Laam Ta'reef), Fiqh (Zakat - rules and calculation, Hajj - ihram, tawaf, sa'i, rites), Quran Tafsir (Surah Waqiah - The Event, Surah Mulk - Sovereignty), Hadith (Qiyamah - Signs of Hour, Day of Judgment, World - Parables and warnings), Marriage & Family Life (Rights of spouse, parenting, family harmony), Leadership Skills (Public speaking, organizing, community responsibility)"
       ],
       "rules": [
-        "Participation in weekly khidmah is required",
+        "Minimum 85% attendance each semester is mandatory",
+        "Daily revision of at least 30 minutes required for Quran and subjects",
+        "Weekly homework submission for Arabic and Urdu",
+        "Monthly written examination covering all subjects",
+        "Termly oral assessment for Quran recitation and Hadith memorization",
+        "Participation in weekly khidmah (community service) is required",
         "Notebook and homework checks every fortnight",
         "Termly oral and written examinations",
-        "Punctual attendance and adab expected",
-        "Parents attend biannual student reviews"
+        "Punctual attendance and adab (etiquette) expected at all times",
+        "Parents attend bi-annual student reviews and progress meetings",
+        "Modest dress code adhering to Islamic guidelines",
+        "Respectful behavior towards teachers and peers required"
       ]
     },
     {
@@ -103,7 +108,7 @@
       "description": "A holistic two-year program for women covering Quran recitation, essential fiqh, family life, and spiritual development.",
       "category": "momina",
       "level": "beginner",
-      "duration": "2 Years",
+      "duration": "2 Years (4 Semesters)",
       "schedule": "Weekdays: 10:00 AM - 1:00 PM",
       "instructor": "Ustadha Maryam Siddiq",
       "maxStudents": 22,
@@ -114,20 +119,24 @@
         "Supportive sisterhood circles"
       ],
       "curriculum": [
-        "Quran recitation with Tajweed",
-        "Fiqh of purity, prayer, and fasting",
-        "Seerah of the Prophet and Mothers of the Believers",
-        "Islamic etiquette and family rights",
-        "Arabic for understanding duas",
-        "Hadith on daily life and worship",
-        "Spiritual development and reflection"
+        "SEMESTER 1: Noorani Qaida (Tajweed basics - letter recognition, basic harakat), Urdu Reading & Writing (Foundations), Fiqh (Taharat - wudu, ghusl, taharah, menstrual hygiene), Aqeedah (Fundamentals of Iman - Tawhid, Belief in Allah and His Angels), Seerat (Prophet's Life - Selected events, Female companions)",
+        "SEMESTER 2: Tajweed (Makharij & Sifaat - proper articulation), Fiqh (Salah - women's obligations, congregation, prayer at home), Tafsir (Surah Yaseen - Introduction and selected verses), Hadith (Ma'ariful Hadith selections on worship and character), Islamic Etiquette (Adab towards parents, neighbors, and society)",
+        "SEMESTER 3: Tajweed (Idgham, Ikhfa, Qalqalah rules), Fiqh (Fasting - Ramadan, types of fasts, exemptions for women), Tafsir (Surah Rahman - Divine Mercy, understanding Allah's blessings), Hadith ( selections on family rights, treating relatives), Family Rights (Rights of wife, husband, children, extended family)", "Women in Islam (Women's rights, roles, and responsibilities, historical examples)",
+        "SEMESTER 4: Tajweed (Advanced application - Madd, stopping rules), Fiqh (Zakat - women's obligations, Hajj - women's rules and conditions, Marriage - nikah, mahr, rights of spouses), Tafsir (Surah Al-Kahf - lessons for women), Hadith ( selections on parenting, child rearing), Child Rearing (Islamic guidelines for raising children, teaching duas and salah), Home Management (Organizing household, time management for students and mothers)"
       ],
       "rules": [
-        "Minimum 80% attendance per semester",
-        "Weekly revision assignments",
-        "Group projects on family life themes",
-        "Semester assessments and oral exams",
-        "Classroom etiquette and modest dress upheld"
+        "Minimum 80% attendance per semester is mandatory",
+        "Daily revision of at least 30 minutes required for Quran and course materials",
+        "Weekly reflection journal submission",
+        "Monthly written examination covering all subjects",
+        "Semester assessments including both written and oral exams",
+        "Group projects on family life themes (twice per semester)",
+        "Weekly revision assignments to be submitted on time",
+        "Classroom etiquette and modest dress code must be upheld at all times",
+        "Participation in sisterhood circle discussions",
+        "Parents or guardians attend semester progress meetings",
+        "Conduct must reflect Islamic values and adab",
+        "Attendance at special seminars and workshops conducted during the program"
       ]
     },
     {
@@ -136,7 +145,7 @@
       "description": "A comprehensive five-year scholarship program in classical Islamic sciences, designed to train future scholars and teachers.",
       "category": "alimiyat",
       "level": "advanced",
-      "duration": "5 Years",
+      "duration": "5 Years (10 Semesters)",
       "schedule": "Weekdays: 8:00 AM - 1:30 PM",
       "instructor": "Mufti Ibrahim Qasmi",
       "maxStudents": 15,
@@ -147,21 +156,28 @@
         "Teaching practicum and mentorship"
       ],
       "curriculum": [
-        "Arabic rhetoric, Sarf, and Nahw",
-        "Tafsir of selected Surahs",
-        "Hadith studies (Mishkat and selected Kutub)",
-        "Fiqh (Hidayah and contemporary issues)",
-        "Usul al-Fiqh and Qawa'id",
-        "Aqeedah, Kalam, and comparative theology",
-        "Seerah, Islamic history, and leadership",
-        "Research methods and Khutbah training"
+        "YEAR 1 (Semesters 1-2): Arabic Grammar (Asan Nahw - basic sentence structure), Arabic Morphology (Sharh Mi'at Aamil - 100 particles), Fiqh (Bahishti Zewar complete - all aspects of worship and daily life), Seerah (Qisas Al-Nabiyyin - Stories of the Prophets), Tajweed (Rules application and Quran recitation), Hifz (Juz Amma memorization with tajweed), Islamic Ethics (Akhlaq and adab)",
+        "YEAR 2 (Semesters 3-4): Sarf (Advanced Morphology - derived forms, Patterns), Qirat (Quran Recitation variants - different qira'at basics), Fiqh (Hidayah - Taharat and Salah in detail), Tafsir (Surah Al-Baqarah selected verses - tafsir al-mizan selections), Hadith (Sahih al-Bukhari selections - approximately 100 hadith), Usool al-Tafsir (Introduction to Quranic exegesis methods)",
+        "YEAR 3 (Semesters 5-6): Nahw (Advanced Grammar - kana and sisters, inna and sisters), Fiqh (Fasting, Zakat, Hajj - detailed rulings), Tafsir (Surah Al-Baqarah continuation, Surah Ale Imran - detailed tafsir), Hadith (Mishkat al-Masabih - selections on faith and worship), Usool al-Tafsir (Advanced tafsir methodologies, asbab al-nuzul), Qira'at (Practical recitation of different qira'at)",
+        "YEAR 4 (Semesters 7-8): Fiqh (Advanced - Mu'amalat (transactions), Nikah (marriage), Judicial rulings), Usool al-Fiqh (Principles of Islamic jurisprudence - adillah, qiyas, ijma', etc.), Arabic Literature (Selected prose and poetry from classical sources), Islamic History (Caliphs and major events), Comparative Religions (Islam vs other faiths - theological discussions), Qira'at (Advanced practice and theory)",
+        "YEAR 5 (Semesters 9-10): Fiqh (Contemporary Issues - modern banking, bioethics, social issues), Khulafa al-Rashidin History (Detailed study of the Rightly Guided Caliphs), Teaching Methodology (Dars preparation, classroom management, student assessment), Research Methods (Academic writing, thesis preparation, citing sources), Ijazah Preparation (Seeking authorization to teach, chain of transmission), Islamic Finance (Basic principles of Islamic banking and economics)"
       ],
       "rules": [
-        "Minimum 90% attendance required",
-        "Daily mutala'ah and written assignments",
-        "Annual comprehensive examinations",
-        "Participation in teaching practicum",
-        "Adherence to institute code of conduct"
+        "Minimum 90% attendance required for all lectures and sessions",
+        "Daily mutala'ah (study) of at least 2 hours beyond class time mandatory",
+        "Weekly written assignments for each major subject",
+        "Monthly examination covering subjects studied in that month",
+        "Annual comprehensive examinations at end of each academic year",
+        "Mid-year and end-of-year oral examinations ( viva voce)",
+        "Participation in teaching practicum from Year 3 onwards (minimum 50 hours)",
+        "Adherence to institute code of conduct at all times on campus",
+        "Maintain respectful dress code appropriate for Islamic scholars",
+        "Attend weekly jum'ah prayer and religious gatherings",
+        "Complete research project/thesis in final year under faculty supervision",
+        "No more than 2 unexcused absences per month allowed",
+        "All students must serve as teaching assistants for at least one semester",
+        "Participation in community outreach and dawah activities required",
+        "Regular attendance at weekly halaqas and circles of knowledge"
       ]
     }
   ]
